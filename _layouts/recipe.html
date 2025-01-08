@@ -1,0 +1,34 @@
+---
+layout: single
+author_profile: false
+---
+
+<div class="recipe-page">
+
+  <header>
+    <h1>{{ page.title }}</h1>
+  </header>
+
+  {% if page.image %}
+  <figure>
+    <img src="{{ page.image | relative_url }}" alt="{{ page.title }}">
+  </figure>
+  {% endif %}
+
+  {% if page.ingredients %}
+  <section class="ingredients">
+    <h2>Ingredients</h2>
+    <ul>
+    {% for item in page.ingredients %}
+      <li>{{ item }}</li>
+    {% endfor %}
+    </ul>
+  </section>
+  {% endif %}
+
+  <section class="steps">
+    <h2>Steps</h2>
+    {{ content }}
+  </section>
+
+</div>

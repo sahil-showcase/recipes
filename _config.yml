@@ -1,0 +1,20 @@
+title: "My Recipe Website"
+description: "A collection of my favorite recipes"
+lang: en
+
+# If using Minimal Mistakes as a remote theme:
+remote_theme: "mmistakes/minimal-mistakes"
+
+# Or if using a local gem-based theme, you might have:
+# theme: minimal-mistakes-jekyll
+
+# If you use a custom collection for recipes:
+collections:
+  recipes:
+    output: true
+    permalink: /recipes/:title/
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
