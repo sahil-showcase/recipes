@@ -4,13 +4,21 @@ title: "Crown of Lamb"
 date: 2025-01-01
 image: /assets/images/crown-of-lamb.jpg
 ingredients:
-  - 1 pound ground beef
-  - 1 onion, chopped
-  - 2 cloves garlic, minced
-  - 1 can (28 oz) crushed tomatoes
-  - Salt and pepper
-  - Pasta of your choice
+  - 2 lamb racks
+  - Cotton Twine
+  - Russet potatoes
+  - Cream
+  - Butter
+  - Milk
+  - Thyme
+  - Red Wine
+  - Brown stock
+  - Apples
+  - Onion
+  - Pineapples
+  - Garlic
 ---
 
-1. In a large pan, 2323sauté onion and garlic...
-2. Add ground beef and...
+References: 
+
+To be added later. 

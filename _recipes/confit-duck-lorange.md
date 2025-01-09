@@ -4,13 +4,16 @@ title: "Confit Duck a L'orange"
 date: 2025-01-01
 image: /assets/images/confit-duck-lorange.jpg
 ingredients:
-  - 1 pound ground beef
-  - 1 onion, chopped
-  - 2 cloves garlic, minced
-  - 1 can (28 oz) crushed tomatoes
-  - Salt and pepper
-  - Pasta of your choice
+  - Duck leg
+  - Oranges
+  - Duck stock
+  - Butter
+  - Sweet potatoes
+  - Cream
+  - Garlic
+  - Herbs
 ---
 
-1. In a large pan, sauté onion and garlic...
-2. Add ground beef and...
+References: https://www.youtube.com/watch?v=qvQz56_4RH8, https://www.youtube.com/watch?v=UhwKM3DzT_Q
+
+To be added later.

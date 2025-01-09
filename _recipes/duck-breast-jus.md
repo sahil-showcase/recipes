@@ -4,13 +4,13 @@ title: "Duck Breast with Demi-Glace"
 date: 2025-01-01
 image: /assets/images/duck-breast-jus.jpg
 ingredients:
-  - 1 pound ground beef
-  - 1 onion, chopped
-  - 2 cloves garlic, minced
-  - 1 can (28 oz) crushed tomatoes
-  - Salt and pepper
-  - Pasta of your choice
+  - Duck Breast
+  - Duck Stock
+  - Pumpkin dried
+  - Radish
+  - White wine
 ---
 
-1. In a large pan, 2323sauté onion and garlic...
-2. Add ground beef and...
+Reference: https://www.youtube.com/watch?v=X2jakwIVLbY
+
+Self explanatory for most part. Main learning point is making sure the pan is cold before putting in the breast that is throughly dry brined. I used two pans and switched between them and removed fat each time I switch.
