@@ -3,8 +3,21 @@ layout: index_no_header
 title: "Sahil Culinary School Portfolio"
 ---
 
-<div class="talk-text">
-  Hey I am Sahil! I work in the AI/Data Science fields with interests in the fin-tech space. In most of my spare time outside of this, I am in the kitchen, thinking about the kitchen or learning about the kitchen. Reach out to me at spatel16300@gmail.com!
+
+<div class="intro-section">
+  <div class="intro-text">
+    <h2>Hey I am Sahil!</h2>
+    <p>
+      I work in the AI/Data Science fields with interests in the fin-tech space. In most of my spare time outside of this, I am in the kitchen, thinking about the kitchen or learning about the kitchen. Reach out to me at spatel16300@gmail.com!
+    </p>
+  </div>
+  
+  <div class="intro-photo">
+    <img 
+      src="{{ '/assets/images/him.jpg' | relative_url }}" 
+      alt="Photo of me in the kitchen"
+    >
+  </div>
 </div>
 
 <!-- The recipe grid or tiles -->

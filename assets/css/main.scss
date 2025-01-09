@@ -15,15 +15,58 @@ margin-bottom: 1rem;
         font-size: 2rem;
         margin: 0;
     }
+
 }
 
 .index-page-content {
 /* This is where your .recipe-grid and .recipe-card styling goes,
     or you can keep that styling separate. */
-    .talk-text {
-        width: 80%;
-        margin: 2rem;
-    }
+    .intro-section {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        max-width: 80%;           // The entire section takes up 80% of the page width
+        margin: 2rem auto;        // Center it horizontally, add some vertical spacing
+      
+        .intro-text {
+          flex: 1;                // Let text grow to fill space
+          margin-right: 1rem;
+      
+          h2 {
+            margin-top: 0;
+          }
+        }
+      
+        .intro-photo {
+          flex: 0 0 auto;         // Photo is a fixed width, does not expand
+          width: 150px;           // Adjust to whatever circle size you want
+          height: 150px;
+      
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;    // Crop the image to fill the circle
+            border-radius: 50%;   // Creates the circular crop
+            display: block;
+          }
+        }
+      
+        /* Responsive: on smaller screens, stack them top-to-bottom */
+        @media (max-width: 768px) {
+          flex-direction: column;
+          align-items: flex-start;  // text aligns to left by default
+      
+          .intro-text {
+            margin-right: 0;
+            margin-bottom: 1rem;
+          }
+      
+          .intro-photo {
+            width: 150px;         // Slightly smaller circle for mobile, if desired
+            height: 150px;
+          }
+        }
+      }
     .recipe-grid {
         /* 5 columns of equal width on wide screens */
         display: grid;
