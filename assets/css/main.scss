@@ -25,45 +25,47 @@ margin-bottom: 1rem;
         display: flex;
         align-items: center;
         justify-content: space-between;
-        max-width: 80%;           // The entire section takes up 80% of the page width
-        margin: 2rem auto;        // Center it horizontally, add some vertical spacing
+        max-width: 80%;
+        margin: 2rem auto;
       
         .intro-text {
-          flex: 1;                // Let text grow to fill space
+          flex: 1;
           margin-right: 1rem;
-      
-          h2 {
-            margin-top: 0;
-          }
         }
       
         .intro-photo {
-          flex: 0 0 auto;         // Photo is a fixed width, does not expand
-          width: 150px;           // Adjust to whatever circle size you want
-          height: 150px;
+          flex: 0 0 auto;
+          width: 200px;
+          height: 200px;
       
           img {
             width: 100%;
             height: 100%;
-            object-fit: cover;    // Crop the image to fill the circle
-            border-radius: 50%;   // Creates the circular crop
+            object-fit: cover;
+            border-radius: 50%;
             display: block;
           }
         }
       
-        /* Responsive: on smaller screens, stack them top-to-bottom */
         @media (max-width: 768px) {
           flex-direction: column;
-          align-items: flex-start;  // text aligns to left by default
+          /* Option 1: Align everything to the left
+             align-items: flex-start; */
+      
+          /* Option 2: Center items horizontally.
+             This is more typical for a stacked mobile layout. */
+          align-items: center; 
       
           .intro-text {
             margin-right: 0;
             margin-bottom: 1rem;
+            text-align: center; /* optional if you want the text centered */
           }
       
           .intro-photo {
-            width: 150px;         // Slightly smaller circle for mobile, if desired
+            width: 150px; 
             height: 150px;
+            margin: 0 auto; /* ensures the image is centered horizontally */
           }
         }
       }
@@ -118,8 +120,10 @@ margin-bottom: 1rem;
         
         /* The top 40% is for the image */
         .card-image {
-          flex: 0 0 40%;
+          flex: 0 0 50%;
+          aspect-ratio: 1 / 1;
           position: relative;
+          overflow: hidden;
           img {
             width: 100%;
             height: 100%;
