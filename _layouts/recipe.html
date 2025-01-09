@@ -1,34 +1,38 @@
 ---
-layout: single
+layout: minimal
 author_profile: false
 ---
 
 <div class="recipe-page">
-
-  <header>
-    <h1>{{ page.title }}</h1>
-  </header>
-
+  
+  <!-- Hero Image -->
   {% if page.image %}
-  <figure>
+  <figure class="hero-image">
     <img src="{{ page.image | relative_url }}" alt="{{ page.title }}">
   </figure>
   {% endif %}
 
-  {% if page.ingredients %}
-  <section class="ingredients">
-    <h2>Ingredients</h2>
-    <ul>
-    {% for item in page.ingredients %}
-      <li>{{ item }}</li>
-    {% endfor %}
-    </ul>
-  </section>
-  {% endif %}
+  <div class="recipe-title">
+    <h1> {{ page.title }} </h1>
+  </div>
 
-  <section class="steps">
-    <h2>Steps</h2>
-    {{ content }}
-  </section>
+  <div class="recipe-content">
+    <!-- Ingredients on the left -->
+    {% if page.ingredients %}
+    <section class="ingredients">
+      <h2>Ingredients</h2>
+      <ul>
+        {% for item in page.ingredients %}
+        <li>{{ item }}</li>
+        {% endfor %}
+      </ul>
+    </section>
+    {% endif %}
 
+    <!-- Steps (markdown content) on the right -->
+    <section class="steps">
+      <h2>Steps</h2>
+      {{ content }}
+    </section>
+  </div>
 </div>

@@ -1,0 +1,169 @@
+---
+---
+
+.index-page-container {
+    max-width: 1200px;
+    margin: 0 auto; 
+    padding: 1rem;
+  }
+  
+.index-page-title {
+margin-bottom: 1rem;
+    /* Place the title in the top-left corner.
+        If you want it truly top-left with no padding, remove the margin. */
+    h1 {
+        font-size: 2rem;
+        margin: 0;
+    }
+}
+
+.index-page-content {
+/* This is where your .recipe-grid and .recipe-card styling goes,
+    or you can keep that styling separate. */
+    .talk-text {
+        width: 80%;
+        margin: 2rem;
+    }
+    .recipe-grid {
+        /* 5 columns of equal width on wide screens */
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        gap: 1rem;               /* space between tiles */
+        max-width: 1200px;       /* or whatever max width you prefer */
+        margin: 0 auto;          /* center the grid */
+        padding: 1rem;
+        
+        /* Responsive fallback: fewer columns on smaller screens */
+        @media (max-width: 1200px) {
+          grid-template-columns: repeat(4, 1fr);
+        }
+        @media (max-width: 992px) {
+          grid-template-columns: repeat(3, 1fr);
+        }
+        @media (max-width: 768px) {
+          grid-template-columns: repeat(2, 1fr);
+        }
+        @media (max-width: 480px) {
+          grid-template-columns: 1fr; /* single column on narrow phones */
+        }
+      }
+      
+      .recipe-card {
+        background-color: #3a3a3a; /* Darker grey */
+        color: #fff;               /* White text for contrast */
+        border-radius: 8px;        /* Rounded corners */
+        overflow: hidden;          /* Ensures children (img) remain clipped */
+        text-align: center;        /* Center text */
+        display: flex;            /* We'll use flex column so the image area can be top portion */
+        flex-direction: column;
+        height: 320px;             /* Fixed total tile height (adjust as needed) */
+      
+        /* Slight hover effect */
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+        &:hover {
+          transform: translateY(-3px);
+          box-shadow: 0 3px 8px rgba(0, 0, 0, 0.3);
+        }
+      
+        a {
+          display: flex;
+          flex-direction: column;
+          color: inherit;
+          text-decoration: none;
+          height: 100%;  /* ensures the link covers the whole card */
+        }
+        
+        /* The top 40% is for the image */
+        .card-image {
+          flex: 0 0 40%;
+          position: relative;
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;  /* Crop/cover the area */
+            display: block;
+          }
+        }
+      
+        /* The bottom 60% is for the title (or more info) */
+        .card-body {
+          flex: 1;               /* fill remaining 60% height */
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          padding: 0.5rem;
+          background-color: #3a3a3a;
+      
+          h2 {
+            font-size: 1rem;     /* “small but fairly sized” text */
+            margin: 0;
+            padding: 0;
+          }
+        }
+      }
+      
+}
+
+.recipe-page {
+    max-width: 1200px;
+    margin: 0 auto;  // center the recipe content
+    
+    // Hero image at top
+    .hero-image {
+      width: 100%;
+      margin: 0;          // remove default figure margins if you like
+      img {
+        width: 100%;
+        height: 90vh;     // top half of viewport (or pick a fixed pixel height)
+        object-fit: cover;
+        display: block;
+      }
+    }
+  
+    .recipe-title {
+      margin: 1.5rem 0 1rem;
+      text-align: center;
+      font-size: 2rem;
+    }
+  
+    .recipe-content {
+      display: flex;
+      flex-direction: row;
+      gap: 2rem;                  // space between columns
+      margin-bottom: 3rem;        // bottom spacing
+  
+      .ingredients {
+        flex: 0 0 25%;            // fixed 25% width
+        background: #fafafa;
+        padding: 1rem;
+        border-radius: 4px;
+  
+        h2 {
+          margin-top: 0;
+        }
+        ul {
+          margin-top: 0.5rem;
+          padding-left: 1rem;
+        }
+      }
+  
+      .steps {
+        flex: 1;                  // take the remaining width
+        padding: 1rem;
+        background: #fff;
+        border-radius: 4px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  
+        h2 {
+          margin-top: 0;
+        }
+        p {
+          line-height: 1.6;
+        }
+        ol, ul {
+          margin: 1rem 0;
+          padding-left: 1.5rem;
+        }
+      }
+    }
+  }

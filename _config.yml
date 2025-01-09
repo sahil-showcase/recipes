@@ -1,7 +1,8 @@
-title: "My Recipe Website"
-description: "A collection of my favorite recipes"
+title: "Sahil Culinary School Portfolio"
+description: "I am him"
 lang: en
 remote_theme: "mmistakes/minimal-mistakes@4.26.2"
+skip_to_main_content_link: false
 collections:
   recipes:
     output: true

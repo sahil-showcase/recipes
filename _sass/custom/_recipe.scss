@@ -1,0 +1,65 @@
+---
+---
+.recipe-page {
+    max-width: 1200px;
+    margin: 0 auto;  // center the recipe content
+    
+    // Hero image at top
+    .hero-image {
+      width: 10%;
+      margin: 0;          // remove default figure margins if you like
+      img {
+        width: 100%;
+        height: 50vh;     // top half of viewport (or pick a fixed pixel height)
+        object-fit: cover;
+        display: block;
+      }
+    }
+  
+    .recipe-title {
+      margin: 1.5rem 0 1rem;
+      text-align: center;
+      font-size: 2rem;
+    }
+  
+    .recipe-content {
+      display: flex;
+      flex-direction: row;
+      gap: 2rem;                  // space between columns
+      margin-bottom: 3rem;        // bottom spacing
+  
+      .ingredients {
+        flex: 0 0 25%;            // fixed 25% width
+        background: #fafafa;
+        padding: 1rem;
+        border-radius: 4px;
+  
+        h2 {
+          margin-top: 0;
+        }
+        ul {
+          margin-top: 0.5rem;
+          padding-left: 1rem;
+        }
+      }
+  
+      .steps {
+        flex: 1;                  // take the remaining width
+        padding: 1rem;
+        background: #fff;
+        border-radius: 4px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  
+        h2 {
+          margin-top: 0;
+        }
+        p {
+          line-height: 1.6;
+        }
+        ol, ul {
+          margin: 1rem 0;
+          padding-left: 1.5rem;
+        }
+      }
+    }
+  }

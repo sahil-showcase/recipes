@@ -1,0 +1,27 @@
+---
+# This front matter says "use the theme's minimal layout under the hood"
+layout: none
+---
+{% comment %}
+This layout file overrides minimal-mistakes/minimal.html 
+but we can copy its content and tweak as needed.
+{% endcomment %}
+
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+<head>
+  {%- include head.html -%}
+  <!-- Insert your custom stylesheet AFTER the theme's styles -->
+  <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+</head>
+<body class="layout--minimal">
+  {%- if site.skip_to_main_content_link != false and page.skip_to_main_content_link != false -%}
+    {%- include skip-to-content.html -%}
+  {%- endif -%}
+
+  <!-- Minimal layout typically just yields the page content. -->
+  {{ content }}
+
+  <!-- If you want a footer, you could include it here, or omit. -->
+</body>
+</html>
