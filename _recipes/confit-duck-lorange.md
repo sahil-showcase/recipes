@@ -2,7 +2,7 @@
 layout: recipe
 title: "Confit Duck a L'orange"
 date: 2025-01-01
-image: /assets/images/confit-duck-lorange.jpg
+image: /assets/images/1-confit-duck-lorange.jpg
 ingredients:
   - Duck leg
   - Oranges

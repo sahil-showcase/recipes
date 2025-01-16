@@ -2,7 +2,7 @@
 layout: recipe
 title: "Glazed Roast Duck"
 date: 2025-01-01
-image: /assets/images/glazed-roast-duck.jpg
+image: /assets/images/9-glazed-roast-duck.jpg
 ingredients:
   - Duck (just crown)
   - Garlic 

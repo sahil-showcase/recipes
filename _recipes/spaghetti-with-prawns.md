@@ -2,7 +2,7 @@
 layout: recipe
 title: "Spaghetti with Prawns"
 date: 2025-01-01
-image: /assets/images/spaghetti-with-prawns.jpg
+image: /assets/images/12-spaghetti-with-prawns.jpg
 ingredients:
   - Shrimp (prawns)
   - Onion

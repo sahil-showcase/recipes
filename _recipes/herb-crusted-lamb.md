@@ -2,7 +2,7 @@
 layout: recipe
 title: "Herb Cursted Lamb Chops"
 date: 2025-01-01
-image: /assets/images/herb-crusted-lamb.jpg
+image: /assets/images/13-herb-crusted-lamb.jpg
 ingredients:
   - Lamb chops
   - Parsley

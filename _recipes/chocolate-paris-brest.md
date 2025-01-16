@@ -2,7 +2,7 @@
 layout: recipe
 title: "Chocolate Paris-Brest"
 date: 2025-01-01
-image: /assets/images/chocolate-paris-brest.jpg
+image: /assets/images/2-chocolate-paris-brest.jpg
 ingredients:
   - Flour
   - Milk

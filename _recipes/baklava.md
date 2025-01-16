@@ -2,7 +2,7 @@
 layout: recipe
 title: "Baklava"
 date: 2025-01-01
-image: /assets/images/baklava.jpg
+image: /assets/images/3-baklava.jpg
 ingredients:
   - Phyllo Sheets
   - Butter (clarified if possible)

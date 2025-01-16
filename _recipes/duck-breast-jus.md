@@ -2,7 +2,7 @@
 layout: recipe
 title: "Duck Breast with Demi-Glace"
 date: 2025-01-01
-image: /assets/images/duck-breast-jus.jpg
+image: /assets/images/4-duck-breast-jus.jpg
 ingredients:
   - Duck Breast
   - Duck Stock

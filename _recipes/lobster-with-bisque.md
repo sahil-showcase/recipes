@@ -2,7 +2,7 @@
 layout: recipe
 title: "Steamed Lobster with Bisque"
 date: 2025-01-01
-image: /assets/images/lobster-with-bisque.jpg
+image: /assets/images/5-lobster-with-bisque.jpg
 ingredients:
   - Lobster
   - Carrots

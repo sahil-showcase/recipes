@@ -2,7 +2,7 @@
 layout: recipe
 title: "Black Forest Cake"
 date: 2025-01-01
-image: /assets/images/blackforest-cake.jpg
+image: /assets/images/8-blackforest-cake.jpg
 ingredients:
   - Flour
   - Cocoa Powder (dutched)

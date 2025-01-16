@@ -2,7 +2,7 @@
 layout: recipe
 title: "Beef Wellington"
 date: 2025-01-01
-image: /assets/images/beef-wellington.jpg
+image: /assets/images/6-beef-wellington.jpg
 ingredients:
   - Center-cut Beef Tenderloin
   - Puff Pastry

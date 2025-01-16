@@ -2,7 +2,7 @@
 layout: recipe
 title: "Crown of Lamb"
 date: 2025-01-01
-image: /assets/images/crown-of-lamb.jpg
+image: /assets/images/7-crown-of-lamb.jpg
 ingredients:
   - 2 lamb racks
   - Cotton Twine

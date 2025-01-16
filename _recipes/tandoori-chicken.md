@@ -2,7 +2,7 @@
 layout: recipe
 title: "Silkie Chicken Tandoori"
 date: 2025-01-01
-image: /assets/images/tandoori-chicken.jpg
+image: /assets/images/11-tandoori-chicken.jpg
 ingredients:
   - Chicken (Silkie)
   - Mustard Oil
