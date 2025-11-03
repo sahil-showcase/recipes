@@ -2,7 +2,7 @@
 layout: recipe
 title: "Chicken Leg Wellington"
 date: 2025-01-01
-image: /assets/images/4-chicken-wellington.JEPG
+image: /assets/images/4-chicken-wellington.jpg
 ingredients:
 ---
 
