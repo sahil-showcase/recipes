@@ -1,10 +1,13 @@
 ---
 layout: recipe
-title: "Peach Pie"
+title: "Tempura with Tencha"
 date: 2025-01-01
-image: /assets/images/20-peach-pie.jpg
+image: /assets/images/49-tempura-with-tencha.jpg
 ingredients:
   - To be added later
 ---
+
+References:
+
 
 To be added later.
