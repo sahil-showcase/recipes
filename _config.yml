@@ -23,6 +23,8 @@ defaults:
       order: 999999
 
 exclude:
+  # ruby/setup-ruby installs CI dependencies here; these are not site content.
+  - vendor
   - README.md
   - _templates
   - scripts

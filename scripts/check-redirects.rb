@@ -45,7 +45,7 @@ YAML.safe_load(File.read(File.join(root, '_data/retired_recipe_slugs.yml'))).eac
     raise "Retired route not covered: #{path}" unless redirects.key?(path) && URI.parse(redirects[path]).path == baseurl + '/'
   end
 end
-%w[Gemfile Gemfile.lock NEW-RECIPE-TEMPLATE.html NEW-RECIPE-TEMPLATE.md scripts/check-recipes.rb test/recipe_redirects_test.rb].each do |file|
+%w[vendor Gemfile Gemfile.lock NEW-RECIPE-TEMPLATE.html NEW-RECIPE-TEMPLATE.md scripts/check-recipes.rb test/recipe_redirects_test.rb].each do |file|
   raise "Development file published: #{file}" if File.exist?(File.join(output,file))
 end
 puts "Verified #{redirects.size} redirect pages and every historical name (baseurl=#{baseurl.inspect})."
