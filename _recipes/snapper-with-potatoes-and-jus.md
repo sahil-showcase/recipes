@@ -1,6 +1,4 @@
 ---
-redirect_from:
-  - /recipes/recipes/snapper-with-potatoes-and-jus/
 order: 4
 layout: recipe
 title: "Snapper with Potatoes and Jus"

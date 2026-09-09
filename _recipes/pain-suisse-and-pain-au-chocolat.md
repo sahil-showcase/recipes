@@ -1,6 +1,4 @@
 ---
-redirect_from:
-  - /recipes/recipes/pain-suisse-and-pain-au-chocolat/
 order: 25
 layout: recipe
 title: "Pain Suisse and Pain au Chocolat"

@@ -1,6 +1,4 @@
 ---
-redirect_from:
-  - /recipes/recipes/niku-udon/
 order: 56
 layout: recipe
 title: "Niku Udon"

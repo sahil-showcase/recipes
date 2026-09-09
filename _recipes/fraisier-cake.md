@@ -1,6 +1,4 @@
 ---
-redirect_from:
-  - /recipes/recipes/fraisier-cake/
 order: 81
 layout: recipe
 title: "Fraisier Cake"

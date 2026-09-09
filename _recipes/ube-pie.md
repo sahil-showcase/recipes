@@ -1,6 +1,4 @@
 ---
-redirect_from:
-  - /recipes/recipes/ube-pie/
 order: 36
 layout: recipe
 title: "Ube Coconut Pie"

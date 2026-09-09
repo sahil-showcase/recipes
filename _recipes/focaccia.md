@@ -1,6 +1,4 @@
 ---
-redirect_from:
-  - /recipes/recipes/focaccia/
 order: 93
 layout: recipe
 title: "Focaccia"

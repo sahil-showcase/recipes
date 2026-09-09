@@ -1,6 +1,4 @@
 ---
-redirect_from:
-  - /recipes/recipes/fluke-with-chicken-butter-sauce/
 order: 71
 layout: recipe
 title: "Fluke with Chicken Butter Sauce"

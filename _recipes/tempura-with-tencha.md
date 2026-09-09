@@ -1,6 +1,4 @@
 ---
-redirect_from:
-  - /recipes/recipes/tempura-with-tencha/
 order: 68
 layout: recipe
 title: "Tempura with Tencha"

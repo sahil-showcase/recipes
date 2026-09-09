@@ -1,6 +1,4 @@
 ---
-redirect_from:
-  - /recipes/recipes/pork-wellington/
 order: 33
 layout: recipe
 title: "Pork Wellington"

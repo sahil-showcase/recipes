@@ -1,6 +1,4 @@
 ---
-redirect_from:
-  - /recipes/recipes/spaghetti-with-prawns/
 order: 51
 layout: recipe
 title: "Spaghetti with Prawns"

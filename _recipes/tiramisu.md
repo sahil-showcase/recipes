@@ -1,6 +1,4 @@
 ---
-redirect_from:
-  - /recipes/recipes/tiramisu/
 order: 18
 layout: recipe
 title: "Tiramisu"

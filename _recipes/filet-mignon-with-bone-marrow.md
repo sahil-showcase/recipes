@@ -1,6 +1,4 @@
 ---
-redirect_from:
-  - /recipes/recipes/filet-mignon-with-bone-marrow/
 order: 3
 layout: recipe
 title: "Filet Mignon with Bone Marrow Bordelaise"

@@ -1,6 +1,4 @@
 ---
-redirect_from:
-  - /recipes/recipes/caprese-mozzarella/
 order: 88
 layout: recipe
 title: "Caprese with Homemade Mozzarella"

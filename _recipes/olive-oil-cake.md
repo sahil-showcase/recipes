@@ -1,6 +1,4 @@
 ---
-redirect_from:
-  - /recipes/recipes/olive-oil-cake/
 order: 94
 layout: recipe
 title: "Olive Oil Cake"

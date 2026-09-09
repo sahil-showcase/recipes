@@ -1,6 +1,4 @@
 ---
-redirect_from:
-  - /recipes/recipes/galatte-de-rois/
 order: 72
 layout: recipe
 title: "Galatte De Rois"

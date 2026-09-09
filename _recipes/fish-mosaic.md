@@ -1,6 +1,4 @@
 ---
-redirect_from:
-  - /recipes/recipes/fish-mosaic/
 order: 70
 layout: recipe
 title: "Fish Mosaic"

@@ -1,6 +1,4 @@
 ---
-redirect_from:
-  - /recipes/recipes/sicilian-pistachio-spaghetti/
 order: 65
 layout: recipe
 title: "Sicilian Pistachio Spaghetti"

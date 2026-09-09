@@ -1,6 +1,4 @@
 ---
-redirect_from:
-  - /recipes/recipes/jamaican-oxtail/
 order: 30
 layout: recipe
 title: "Jamaican Oxtail"

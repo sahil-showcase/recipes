@@ -1,6 +1,4 @@
 ---
-redirect_from:
-  - /recipes/recipes/salmon-with-curry-foam/
 order: 79
 layout: recipe
 title: "Salmon with Curry Foam"

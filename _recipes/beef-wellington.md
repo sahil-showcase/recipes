@@ -1,6 +1,4 @@
 ---
-redirect_from:
-  - /recipes/recipes/beef-wellington/
 order: 14
 layout: recipe
 title: "Beef Wellington"

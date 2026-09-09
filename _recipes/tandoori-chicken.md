@@ -1,6 +1,4 @@
 ---
-redirect_from:
-  - /recipes/recipes/tandoori-chicken/
 order: 34
 layout: recipe
 title: "Silkie Chicken Tandoori"

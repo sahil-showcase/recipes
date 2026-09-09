@@ -1,6 +1,4 @@
 ---
-redirect_from:
-  - /recipes/recipes/raviolo-al-uovo/
 order: 90
 layout: recipe
 title: "Raviolo Al' Uovo"

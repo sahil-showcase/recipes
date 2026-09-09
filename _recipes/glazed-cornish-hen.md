@@ -1,6 +1,4 @@
 ---
-redirect_from:
-  - /recipes/recipes/glazed-cornish-hen/
 order: 49
 layout: recipe
 title: "Glazed-Cronish-hen"

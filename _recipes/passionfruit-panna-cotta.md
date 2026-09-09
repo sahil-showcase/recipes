@@ -1,6 +1,4 @@
 ---
-redirect_from:
-  - /recipes/recipes/passionfruit-panna-cotta/
 order: 89
 layout: recipe
 title: "Passionfruit Panna Cotta"

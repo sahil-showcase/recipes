@@ -1,6 +1,4 @@
 ---
-redirect_from:
-  - /recipes/recipes/macarons/
 order: 73
 layout: recipe
 title: "Macarons"

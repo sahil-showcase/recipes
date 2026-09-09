@@ -1,6 +1,4 @@
 ---
-redirect_from:
-  - /recipes/recipes/lobster-with-bisque/
 order: 9
 layout: recipe
 title: "Steamed Lobster with Bisque"

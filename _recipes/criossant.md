@@ -1,6 +1,4 @@
 ---
-redirect_from:
-  - /recipes/recipes/criossant/
 order: 54
 layout: recipe
 title: "Criossant"

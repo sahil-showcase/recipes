@@ -1,6 +1,4 @@
 ---
-redirect_from:
-  - /recipes/recipes/basque-cheesecake/
 order: 13
 layout: recipe
 title: "Basque Cheesecake"

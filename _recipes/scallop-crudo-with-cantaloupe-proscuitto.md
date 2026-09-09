@@ -1,6 +1,4 @@
 ---
-redirect_from:
-  - /recipes/recipes/scallop-crudo-with-cantaloupe-proscuitto/
 order: 95
 layout: recipe
 title: "Scallop Crudo w Cantaloupe Proscuitto"

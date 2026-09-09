@@ -1,6 +1,4 @@
 ---
-redirect_from:
-  - /recipes/recipes/snow-crab-with-carrot-puree/
 order: 22
 layout: recipe
 title: "Snow Crab with Carrot Puree"

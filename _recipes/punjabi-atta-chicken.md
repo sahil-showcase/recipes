@@ -1,6 +1,4 @@
 ---
-redirect_from:
-  - /recipes/recipes/punjabi-atta-chicken/
 order: 76
 layout: recipe
 title: "Punjabi Atta Chicken"

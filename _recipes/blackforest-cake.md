@@ -1,6 +1,4 @@
 ---
-redirect_from:
-  - /recipes/recipes/blackforest-cake/
 order: 26
 layout: recipe
 title: "Black Forest Cake"

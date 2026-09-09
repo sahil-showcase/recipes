@@ -1,6 +1,4 @@
 ---
-redirect_from:
-  - /recipes/recipes/tortellini-en-brodo/
 order: 12
 layout: recipe
 title: "Tortellini en Brodo"

@@ -1,6 +1,4 @@
 ---
-redirect_from:
-  - /recipes/recipes/rum-cake/
 order: 86
 layout: recipe
 title: "Rum Cake"

@@ -1,6 +1,4 @@
 ---
-redirect_from:
-  - /recipes/recipes/agnolotti-del-plin/
 order: 92
 layout: recipe
 title: "Agnolotti del Plin"

@@ -1,6 +1,4 @@
 ---
-redirect_from:
-  - /recipes/recipes/pumpkin-soup/
 order: 53
 layout: recipe
 title: "Pumpkin Soup"

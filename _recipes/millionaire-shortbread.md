@@ -1,6 +1,4 @@
 ---
-redirect_from:
-  - /recipes/recipes/millionaire-shortbread/
 order: 44
 layout: recipe
 title: "Millionaires Shortbread"

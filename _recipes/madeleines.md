@@ -1,6 +1,4 @@
 ---
-redirect_from:
-  - /recipes/recipes/madeleines/
 order: 46
 layout: recipe
 title: "Madeleines"

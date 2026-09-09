@@ -1,6 +1,4 @@
 ---
-redirect_from:
-  - /recipes/recipes/cinnamon-apple-tart/
 order: 37
 layout: recipe
 title: "Cinnamon Apple Tart"

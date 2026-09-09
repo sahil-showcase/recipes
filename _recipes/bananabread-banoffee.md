@@ -1,6 +1,4 @@
 ---
-redirect_from:
-  - /recipes/recipes/bananabread-banoffee/
 order: 83
 layout: recipe
 title: "Bananabread Banoffee"

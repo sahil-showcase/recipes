@@ -1,6 +1,4 @@
 ---
-redirect_from:
-  - /recipes/recipes/confit-duck-lorange/
 order: 1
 layout: recipe
 title: "Confit Duck a L'orange"

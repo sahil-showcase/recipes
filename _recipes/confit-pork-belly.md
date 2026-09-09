@@ -1,6 +1,4 @@
 ---
-redirect_from:
-  - /recipes/recipes/confit-pork-belly/
 order: 5
 layout: recipe
 title: "Confit Pork Belly"

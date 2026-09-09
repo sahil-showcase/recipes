@@ -5,7 +5,7 @@ A Jekyll recipe website with a short introduction and photo above a grid of dish
 ## Add a recipe in three steps
 
 1. **Upload a photo** to `assets/images/`. Use a simple name, for example `lemon-tart.jpg`.
-2. **Copy `_templates/NEW-RECIPE-TEMPLATE.md`** to `_recipes/lemon-tart.md`. Replace the title, description, image path, ingredients, steps, and references. The template includes each supported type. Keep the two `---` lines. The new template puts structured steps above the second line; optional extra Markdown notes go below it.
+2. **Copy `NEW-RECIPE-TEMPLATE.md`** to `_recipes/lemon-tart.md`. Replace the title, description, image path, ingredients, steps, and references. The template includes each supported type. Keep the two `---` lines. The new template puts structured steps above the second line; optional extra Markdown notes go below it.
 3. **Set `order`** to a unique number for the tile’s position. Save and publish through your existing GitHub Pages setup. The tile and recipe page are generated automatically.
 
 You only need one Markdown file and one photo per recipe. No edits to the homepage, layouts, or code are needed. Do not edit generated `_site/` files.
@@ -52,19 +52,36 @@ bundle install
 bundle exec jekyll serve
 ```
 
-Open the local address printed by Jekyll. To check a production build, run `bundle exec jekyll build`. Commit and push the source changes using your existing GitHub Pages publishing setup.
+Open the local address printed by Jekyll. To check a production build, run `bundle exec jekyll build`. Use the GitHub Actions publishing setup described below when committing and pushing source changes.
 
 For a project site hosted under `/recipes`, configure `baseurl: "/recipes"` in `_config.yml` (or pass `--baseurl /recipes`). For a domain-root site, leave it empty. Local navigation, images, scripts, and stylesheets use Jekyll’s `relative_url` filter.
 
-## Older recipe links
+## Automatic recipe redirects
 
-Existing `/recipes/recipes/dish-name/` links redirect to `/recipes/dish-name/`. Each existing recipe declares its old path in `redirect_from`, and `jekyll-redirect-from` (already included in the GitHub Pages dependencies) generates a small redirect page during the build. These are browser redirects, not server-side HTTP 301 responses. The current homepage still links to the shorter canonical routes.
+`_plugins/recipe_redirects.rb` automatically creates alternate recipe routes during every build. No redirect fields are needed in new recipe files. It supports `/recipes/name/` and `/recipes/recipes/name/`, the historical numbered names in `_data/legacy_recipe_slugs.yml`, capitalization/underscore variants, and GitHub Pages project mounts.
 
-When copying a recipe, remove its `redirect_from` block unless you need an old URL, or replace the alias with the correct filename. Never copy another recipe’s alias unchanged. Restart `jekyll serve` after configuration changes so the plugin is loaded. Paths here assume an empty `baseurl`, as in the current configuration.
+The history map includes names recovered from Git commits, including previous renumbering and spelling corrections. Do not delete those entries. If you rename a recipe later, move its map entry to the new filename and add its previous filename to the list. Tile `order` never changes a URL.
+
+The intentionally deleted Korean Fried Chicken placeholder is listed in `_data/retired_recipe_slugs.yml`; its old links return to the collection. All other recovered aliases go directly to their current recipe. Redirects are static HTML browser redirects; GitHub Pages does not provide server-side wildcard/301 rules here.
+
+## GitHub Pages deployment
+
+The workflow in `.github/workflows/pages.yml` validates content, tests redirect generation, builds Jekyll with custom plugins, verifies the generated redirect pages, and publishes `_site` as an artifact. Pushes to `main` deploy; pull requests only build and validate. Build output is not committed.
+
+One-time activation before pushing this change: in repository **Settings → Pages → Build and deployment → Source**, choose **GitHub Actions**. Then commit and push these changes to `main`. If already pushed, run **Build and deploy recipe site** from the Actions tab. The workflow reads the site's origin and base path from GitHub Pages, so it works with project URLs and custom domains. The same plugin runs locally with `bundle exec jekyll serve --baseurl ""`.
+
+Local checks:
+
+```sh
+bundle exec ruby scripts/check-recipes.rb
+bundle exec ruby test/recipe_redirects_test.rb
+bundle exec jekyll build --baseurl ""
+bundle exec ruby scripts/check-redirects.rb _site ""
+```
 
 ## Structured recipe example
 
-`_recipes/tandoori-chicken.md` (Silkie Chicken Tandoori) is a complete working example. `_templates/NEW-RECIPE-TEMPLATE.md` is the blank copy-and-fill template. Existing Markdown-only recipes continue to render without conversion.
+`_recipes/tandoori-chicken.md` (Silkie Chicken Tandoori) is a complete working example. `NEW-RECIPE-TEMPLATE.md` is the blank copy-and-fill template. Existing Markdown-only recipes continue to render without conversion.
 
 - **Ingredients:** write a YAML list of strings, or `text` / `group` blocks for optional grouping. They display as 1, 2, 3 in exactly that order. Move list items to reorder; do not put numbers in the text.
 - **Steps:** each `- title:` block is the next numbered step. `text: |` supports paragraphs and Markdown. `before` and `after` are optional descriptors inside that step; `method_intro` and `method_outro` describe the full method.

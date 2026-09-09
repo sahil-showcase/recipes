@@ -1,6 +1,4 @@
 ---
-redirect_from:
-  - /recipes/recipes/fig-cake/
 order: 40
 layout: recipe
 title: "Fig Cake"

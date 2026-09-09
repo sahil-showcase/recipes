@@ -1,6 +1,4 @@
 ---
-redirect_from:
-  - /recipes/recipes/chicken-roulade/
 order: 15
 layout: recipe
 title: "Chicken Roulade"

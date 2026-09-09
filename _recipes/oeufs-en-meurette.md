@@ -1,6 +1,4 @@
 ---
-redirect_from:
-  - /recipes/recipes/oeufs-en-meurette/
 order: 45
 layout: recipe
 title: "Oeufs en Meurette"

@@ -1,6 +1,4 @@
 ---
-redirect_from:
-  - /recipes/recipes/churros/
 order: 84
 layout: recipe
 title: "Churros"

@@ -1,6 +1,4 @@
 ---
-redirect_from:
-  - /recipes/recipes/chicken-chetinad/
 order: 48
 layout: recipe
 title: "Chicken Chetinad"

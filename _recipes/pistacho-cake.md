@@ -1,6 +1,4 @@
 ---
-redirect_from:
-  - /recipes/recipes/pistacho-cake/
 order: 21
 layout: recipe
 title: "Pistachio Cake"

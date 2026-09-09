@@ -1,6 +1,4 @@
 ---
-redirect_from:
-  - /recipes/recipes/escovitch-fish/
 order: 87
 layout: recipe
 title: "Escovitch Fish"

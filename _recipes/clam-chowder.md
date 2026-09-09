@@ -1,6 +1,4 @@
 ---
-redirect_from:
-  - /recipes/recipes/clam-chowder/
 order: 63
 layout: recipe
 title: "Clam Chowder"

@@ -1,6 +1,4 @@
 ---
-redirect_from:
-  - /recipes/recipes/baklava-cheesecake/
 order: 19
 layout: recipe
 title: "Baklava Cheesecake"

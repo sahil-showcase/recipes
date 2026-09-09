@@ -1,6 +1,4 @@
 ---
-redirect_from:
-  - /recipes/recipes/vietnamese-soft-shell-crab/
 order: 41
 layout: recipe
 title: "Vietnamese Soft Shell Crab"

@@ -1,6 +1,4 @@
 ---
-redirect_from:
-  - /recipes/recipes/rhubarb-tart/
 order: 78
 layout: recipe
 title: "Rhubarb Tart"

@@ -1,6 +1,4 @@
 ---
-redirect_from:
-  - /recipes/recipes/fluke-head-with-sriracha-sauce/
 order: 69
 layout: recipe
 title: "Fluke Head with Sriracha Sauce"

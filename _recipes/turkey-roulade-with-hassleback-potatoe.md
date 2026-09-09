@@ -1,6 +1,4 @@
 ---
-redirect_from:
-  - /recipes/recipes/turkey-roulade-with-hassleback-potatoe/
 order: 23
 layout: recipe
 title: "Turkey Roulade with Hassleback Potatoe"

@@ -1,6 +1,4 @@
 ---
-redirect_from:
-  - /recipes/recipes/mole-poblano/
 order: 85
 layout: recipe
 title: "Mole Poblano"

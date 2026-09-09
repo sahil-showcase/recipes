@@ -1,6 +1,4 @@
 ---
-redirect_from:
-  - /recipes/recipes/thai-peanut-noodles/
 order: 62
 layout: recipe
 title: "Thai Peanut Noodles"

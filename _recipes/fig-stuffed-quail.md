@@ -1,6 +1,4 @@
 ---
-redirect_from:
-  - /recipes/recipes/fig-stuffed-quail/
 order: 50
 layout: recipe
 title: "Fig Stuffed Quail"

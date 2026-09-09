@@ -1,6 +1,4 @@
 ---
-redirect_from:
-  - /recipes/recipes/pork-trotter-kauffmann/
 order: 96
 layout: recipe
 title: "Pork Trotter Kauffmann"

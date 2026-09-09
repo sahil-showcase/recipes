@@ -1,6 +1,4 @@
 ---
-redirect_from:
-  - /recipes/recipes/choux-au-craquelin/
 order: 99
 layout: recipe
 title: "Choux au Craquelin"

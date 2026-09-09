@@ -1,6 +1,4 @@
 ---
-redirect_from:
-  - /recipes/recipes/pork-cutlet/
 order: 61
 layout: recipe
 title: "Pork Cutlet"

@@ -1,6 +1,4 @@
 ---
-redirect_from:
-  - /recipes/recipes/abalone-en-croute/
 order: 74
 layout: recipe
 title: "Abalone En Croute"

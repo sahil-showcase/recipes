@@ -1,6 +1,4 @@
 ---
-redirect_from:
-  - /recipes/recipes/creme-brule/
 order: 47
 layout: recipe
 title: "Creme Brule"

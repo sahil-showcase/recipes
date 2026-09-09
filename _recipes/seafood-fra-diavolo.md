@@ -1,6 +1,4 @@
 ---
-redirect_from:
-  - /recipes/recipes/seafood-fra-diavolo/
 order: 52
 layout: recipe
 title: "Seafood Fra Diavolo"

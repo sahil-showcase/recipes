@@ -1,6 +1,4 @@
 ---
-redirect_from:
-  - /recipes/recipes/herb-crusted-lamb/
 order: 17
 layout: recipe
 title: "Herb Cursted Lamb Chops"

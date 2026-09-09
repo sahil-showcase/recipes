@@ -1,6 +1,4 @@
 ---
-redirect_from:
-  - /recipes/recipes/lab-with-cilbir/
 order: 64
 layout: recipe
 title: "Lamb with Cilbi"

@@ -1,6 +1,4 @@
 ---
-redirect_from:
-  - /recipes/recipes/ravioli-with-sage-brown-butter/
 order: 66
 layout: recipe
 title: "Ravioli with Sage Brown Butter Sauce"

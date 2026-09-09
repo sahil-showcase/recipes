@@ -1,6 +1,4 @@
 ---
-redirect_from:
-  - /recipes/recipes/tres-leches-cake/
 order: 38
 layout: recipe
 title: "Tres Leches Cake"

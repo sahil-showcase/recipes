@@ -1,6 +1,4 @@
 ---
-redirect_from:
-  - /recipes/recipes/chocolate-paris-brest/
 order: 8
 layout: recipe
 title: "Chocolate Paris-Brest"

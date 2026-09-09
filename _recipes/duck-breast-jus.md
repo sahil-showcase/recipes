@@ -1,6 +1,4 @@
 ---
-redirect_from:
-  - /recipes/recipes/duck-breast-jus/
 order: 2
 layout: recipe
 title: "Duck Breast with Demi-Glace"

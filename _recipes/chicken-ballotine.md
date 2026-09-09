@@ -1,6 +1,4 @@
 ---
-redirect_from:
-  - /recipes/recipes/chicken-ballotine/
 order: 80
 layout: recipe
 title: "Chicken Ballotine"

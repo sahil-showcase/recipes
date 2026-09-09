@@ -1,6 +1,4 @@
 ---
-redirect_from:
-  - /recipes/recipes/scallops-with-cauliflower-puree/
 order: 58
 layout: recipe
 title: "Scallops with Cauliflower Puree"

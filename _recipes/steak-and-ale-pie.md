@@ -1,6 +1,4 @@
 ---
-redirect_from:
-  - /recipes/recipes/steak-and-ale-pie/
 order: 82
 layout: recipe
 title: "Steak and Ale Pie"

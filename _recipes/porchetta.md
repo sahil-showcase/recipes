@@ -1,6 +1,4 @@
 ---
-redirect_from:
-  - /recipes/recipes/porchetta/
 order: 11
 layout: recipe
 title: "Porchetta"

@@ -1,6 +1,4 @@
 ---
-redirect_from:
-  - /recipes/recipes/duck-leg-with-cauliflower-puree/
 order: 20
 layout: recipe
 title: "Roasted Duck Leg with Cauliflower Puree"

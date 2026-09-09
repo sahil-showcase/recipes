@@ -1,6 +1,4 @@
 ---
-redirect_from:
-  - /recipes/recipes/gyudon/
 order: 57
 layout: recipe
 title: "Gyudon"

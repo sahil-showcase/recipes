@@ -1,6 +1,4 @@
 ---
-redirect_from:
-  - /recipes/recipes/profiterole/
 order: 100
 layout: recipe
 title: "Profiterole"

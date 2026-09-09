@@ -1,6 +1,4 @@
 ---
-redirect_from:
-  - /recipes/recipes/fillet-mignon-beets/
 order: 27
 layout: recipe
 title: "Filet Mignon with Beets"

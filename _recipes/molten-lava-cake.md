@@ -1,6 +1,4 @@
 ---
-redirect_from:
-  - /recipes/recipes/molten-lava-cake/
 order: 28
 layout: recipe
 title: "Molten Lava Cake"

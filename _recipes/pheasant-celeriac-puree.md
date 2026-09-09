@@ -1,6 +1,4 @@
 ---
-redirect_from:
-  - /recipes/recipes/pheasant-celeriac-puree/
 order: 75
 layout: recipe
 title: "Pheasant with Celeriac Puree"

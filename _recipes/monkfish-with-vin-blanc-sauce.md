@@ -1,6 +1,4 @@
 ---
-redirect_from:
-  - /recipes/recipes/monkfish-with-vin-blanc-sauce/
 order: 24
 layout: recipe
 title: "Monkfish with Vin Blanc Sauce"

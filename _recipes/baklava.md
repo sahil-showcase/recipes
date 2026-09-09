@@ -1,6 +1,4 @@
 ---
-redirect_from:
-  - /recipes/recipes/baklava/
 order: 10
 layout: recipe
 title: "Baklava"

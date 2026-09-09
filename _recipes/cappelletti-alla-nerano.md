@@ -1,6 +1,4 @@
 ---
-redirect_from:
-  - /recipes/recipes/cappelletti-alla-nerano/
 order: 91
 layout: recipe
 title: "Cappelletti Alla Nerano"

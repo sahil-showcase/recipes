@@ -1,6 +1,4 @@
 ---
-redirect_from:
-  - /recipes/recipes/tonkotsu-ramen/
 order: 35
 layout: recipe
 title: "Tonkotsu Ramen"

@@ -1,6 +1,4 @@
 ---
-redirect_from:
-  - /recipes/recipes/chicken-wellington/
 order: 7
 layout: recipe
 title: "Chicken Leg Wellington"

@@ -1,6 +1,4 @@
 ---
-redirect_from:
-  - /recipes/recipes/honey-pie/
 order: 42
 layout: recipe
 title: "Honey Pie"

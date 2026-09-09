@@ -1,6 +1,4 @@
 ---
-redirect_from:
-  - /recipes/recipes/shepherds-pie/
 order: 59
 layout: recipe
 title: "Shepards Pie"

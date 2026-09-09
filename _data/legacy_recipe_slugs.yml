@@ -1,0 +1,215 @@
+# Historical filename stems recovered from Git history. Keep these when renaming.
+# Keys are current recipe filenames without .md; values are their old names.
+"abalone-en-croute":
+  - "55-abalone-en-croute"
+"agnolotti-del-plin":
+  - "74-agnolotti-del-plin"
+"aguachile-verde":
+  - "79-aguachile-verde"
+"baklava":
+  - "06-baklava"
+"baklava-cheesecake":
+  - "10-baklava-cheesecake"
+"bananabread-banoffee":
+  - "65-bananabread-banoffee"
+"basque-cheesecake":
+  - "07-basque-cheesecake"
+"beef-wellington":
+  - "07-beef-wellington"
+"blackforest-cake":
+  - "12-blackforest-cake"
+"cappelletti-alla-nerano":
+  - "73-cappelletti-alla-nerano"
+"caprese-mozzarella":
+  - "70-caprese-mozzarella"
+"chicken-ballotine":
+  - "62-chicken-ballotine"
+"chicken-chetinad":
+  - "28-chicken-chetinad"
+"chicken-roulade":
+  - "08-chicken-roulade"
+"chicken-wellington":
+  - "04-chicken-wellington"
+"chocolate-mouse-petit-gateau":
+  - "48-chocolate-mouse-petit-gateau"
+"chocolate-paris-brest":
+  - "04-chocolate-paris-brest"
+"choux-au-craquelin":
+  - "103-choux-au-craquelin"
+"churros":
+  - "66-churros"
+"cinnamon-apple-tart":
+  - "20-cinnamon-apple-tart"
+  - "20-peach-pie"
+"clam-chowder":
+  - "44-clam-chowder"
+"confit-duck-lorange":
+  - "00-confit-duck-lorange"
+  - "01-confit-duck-lorange"
+"confit-pork-belly":
+  - "03-confit-pork-belly"
+  - "06-confit-pork-belly"
+"creme-brule":
+  - "27-creme-brule"
+"criossant":
+  - "35-criossant"
+"crown-of-lamb":
+  - "03-crown-of-lamb"
+"duck-breast-jus":
+  - "01-duck-breast-jus"
+  - "02-duck-breast-jus"
+"duck-leg-with-cauliflower-puree":
+  - "10-duck-leg-with-cauliflower-puree"
+"escovitch-fish":
+  - "69-escovitch-fish"
+"fig-cake":
+  - "21-fig-cake"
+"fig-stuffed-quail":
+  - "31-fig-stuffed-quail"
+"filet-mignon-with-bone-marrow":
+  - "01-filet-mignon-with-bone-marrow"
+"fillet-mignon-beets":
+  - "13-fillet-mignon-beets"
+"fish-mosaic":
+  - "51-fish-mosaic"
+"flan":
+  - "36-flan"
+"fluke-head-with-sriracha-sauce":
+  - "50-fluke-head-with-sriracha-sauce"
+"fluke-with-chicken-butter-sauce":
+  - "52-fluke-with-chicken-butter-sauce"
+"focaccia":
+  - "75-focaccia"
+"fraisier-cake":
+  - "61-fraisier-cake"
+  - "63-fraisier-cake"
+"galatte-de-rois":
+  - "53_galatte_de_rois"
+"glazed-cornish-hen":
+  - "29-glazed-cornish-hen"
+"glazed-roast-duck":
+  - "14-glazed-roast-duck"
+"gyudon":
+  - "38-gyudon"
+"herb-crusted-lamb":
+  - "09-herb-crusted-lamb"
+"honey-pie":
+  - "22-honey-pie"
+"jamaican-oxtail":
+  - "15-jamaican-oxtail"
+"keylime-pie":
+  - "58-keylime-pie"
+"korean-ricecake-soup-with-pork-dumplings":
+  - "102-korean-ricecake-soup-with-pork-dumplings"
+"lab-with-cilbir":
+  - "45-lab-with-cilbir"
+"lemon-squares":
+  - "23-lemon-squares"
+"lobster-with-bisque":
+  - "05-lobster-with-bisque"
+"macarons":
+  - "54_macarons"
+"madeleines":
+  - "26-madeleines"
+"millionaire-shortbread":
+  - "24-millionaire-shortbread"
+"miso-glazed-black-cod":
+  - "041-miso-glazed-black-cod"
+  - "101-miso-glazed-black-cod"
+"mole-poblano":
+  - "67-mole-poblano"
+"molten-lava-cake":
+  - "13-molten-lava-cake"
+"monkfish-with-vin-blanc-sauce":
+  - "11-monkfish-with-vin-blanc-sauce"
+"niku-udon":
+  - "37-niku-udon"
+"oeufs-en-meurette":
+  - "25-oeufs-en-meurette"
+"olive-oil-cake":
+  - "76-olive-oil-cake"
+"pain-suisse-and-pain-au-chocolat":
+  - "11-pain-suisse-and-pain-au-chocolat"
+"passionfruit-panna-cotta":
+  - "71-passionfruit-panna-cotta"
+"pheasant-celeriac-puree":
+  - "56-pheasant-celeriac-puree"
+"pistacho-cake":
+  - "10-pistacho-cake"
+"porchetta":
+  - "06-Porchetta"
+  - "9-Porchetta"
+"pork-cutlet":
+  - "42-pork-cutlet"
+"pork-trotter-kauffmann":
+  - "78-pork-trotter-kauffmann"
+"pork-wellington":
+  - "18-pork-wellington"
+"profiterole":
+  - "104-profiterole"
+"pumpkin-soup":
+  - "34-pumpkin-soup"
+"punjabi-atta-chicken":
+  - "57-punjabi-atta-chicken"
+"ragu-bolognese":
+  - "16-ragu-bolognese"
+"ravioli-with-sage-brown-butter":
+  - "47-Ravioli-With-Sage-Brown-Butter"
+"raviolo-al-uovo":
+  - "72-raviolo-al-uovo"
+"rhubarb-tart":
+  - "59-rhubarb-tart"
+"rum-cake":
+  - "68-rum-cake"
+"salmon-with-curry-foam":
+  - "60-salmon-with-curry-foam"
+"scallop-crudo-with-cantaloupe-proscuitto":
+  - "77-scallop-crudo-with-cantaloupe-proscuitto"
+"scallops-with-cauliflower-puree":
+  - "39-scallops-with-cauliflower-puree"
+"seafood-fra-diavolo":
+  - "33-seafood-fra-diavolo"
+"shepherds-pie":
+  - "40-shepards-pie"
+  - "40-shepherds-pie"
+  - "shepards-pie"
+"sicilian-pistachio-spaghetti":
+  - "46-Sicilian-Pistachio-Spaghetti"
+"snapper-with-potatoes-and-jus":
+  - "00-snapper-with-potatoes-and-jus"
+  - "02-snapper-with-potatoes-and-jus"
+"snow-crab-with-carrot-puree":
+  - "10-snow-crab-with-carrot-puree"
+"spaghetti-with-prawns":
+  - "32-spaghetti-with-prawns"
+"steak-and-ale-pie":
+  - "64-stake-and-ale-pie"
+  - "64-steak-and-ale-pie"
+"suan-cai-yu":
+  - "08-suan-cai-yu"
+  - "11-suan-cai-yu"
+"swedish-meatballs":
+  - "17-swedish-meatballs"
+"tandoori-chicken":
+  - "18-tandoori-chicken"
+"tempura-with-tencha":
+  - "49-tempura-with-tencha"
+"thai-peanut-noodles":
+  - "43-thai-peanut-noodles"
+"tiramisu":
+  - "09-tiramisu"
+  - "11-tiramisu"
+"tonkotsu-ramen":
+  - "19-tonkotsu-ramen"
+"tortellini-en-brodo":
+  - "06-Tortellini-en-brodo"
+"tres-leches-cake":
+  - "20-tres-leches-cake"
+"turkey-roulade-with-hassleback-potatoe":
+  - "10-turkey-roulade-with-hassleback-potatoe"
+"ube-pie":
+  - "19-ube-pie"
+"vietnamese-soft-shell-crab":
+  - "21-vietnamese-soft-shell-crab"
+"wild-mushroom-tortelloni":
+  - "20-Wild-Mushroom-Tortelloni"

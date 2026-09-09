@@ -1,6 +1,4 @@
 ---
-redirect_from:
-  - /recipes/recipes/korean-ricecake-soup-with-pork-dumplings/
 order: 98
 layout: recipe
 title: "Korean Ricecake Soup with Pork Dumplings"

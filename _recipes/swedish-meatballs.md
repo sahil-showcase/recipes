@@ -1,6 +1,4 @@
 ---
-redirect_from:
-  - /recipes/recipes/swedish-meatballs/
 order: 32
 layout: recipe
 title: "Swedish Meatballs"

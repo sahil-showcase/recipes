@@ -1,6 +1,4 @@
 ---
-redirect_from:
-  - /recipes/recipes/chocolate-mouse-petit-gateau/
 order: 67
 layout: recipe
 title: "Chocolate Mousse Petit Gateau"

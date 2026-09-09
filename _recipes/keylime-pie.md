@@ -1,6 +1,4 @@
 ---
-redirect_from:
-  - /recipes/recipes/keylime-pie/
 order: 77
 layout: recipe
 title: "Key Lime Pie"

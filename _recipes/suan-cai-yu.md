@@ -1,6 +1,4 @@
 ---
-redirect_from:
-  - /recipes/recipes/suan-cai-yu/
 order: 16
 layout: recipe
 title: "Suan Cai Yu"

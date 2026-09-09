@@ -1,6 +1,4 @@
 ---
-redirect_from:
-  - /recipes/recipes/wild-mushroom-tortelloni/
 order: 39
 layout: recipe
 title: "Wild Mushroom Tortelloni"

@@ -1,6 +1,4 @@
 ---
-redirect_from:
-  - /recipes/recipes/glazed-roast-duck/
 order: 29
 layout: recipe
 title: "Glazed Roast Duck"

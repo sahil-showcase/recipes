@@ -1,6 +1,4 @@
 ---
-redirect_from:
-  - /recipes/recipes/flan/
 order: 55
 layout: recipe
 title: "Flan"

@@ -1,6 +1,4 @@
 ---
-redirect_from:
-  - /recipes/recipes/lemon-squares/
 order: 43
 layout: recipe
 title: "Lemon Squares"

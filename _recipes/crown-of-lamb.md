@@ -1,6 +1,4 @@
 ---
-redirect_from:
-  - /recipes/recipes/crown-of-lamb/
 order: 6
 layout: recipe
 title: "Crown of Lamb"

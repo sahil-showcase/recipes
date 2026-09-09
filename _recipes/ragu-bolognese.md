@@ -1,6 +1,4 @@
 ---
-redirect_from:
-  - /recipes/recipes/ragu-bolognese/
 order: 31
 layout: recipe
 title: "Ragu Bolognese"

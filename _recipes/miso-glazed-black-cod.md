@@ -1,6 +1,4 @@
 ---
-redirect_from:
-  - /recipes/recipes/miso-glazed-black-cod/
 order: 60
 layout: recipe
 title: "Miso Glazed Black Cod with Coconut Velouté"
