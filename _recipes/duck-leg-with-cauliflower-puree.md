@@ -1,0 +1,14 @@
+---
+redirect_from:
+  - /recipes/recipes/duck-leg-with-cauliflower-puree/
+order: 20
+layout: recipe
+title: "Roasted Duck Leg with Cauliflower Puree"
+date: 2025-01-01
+image: /assets/images/duck-leg-with-cauliflower-puree.jpg
+ingredients:
+  - To be added later
+---
+
+
+To be added later.

@@ -1,0 +1,14 @@
+---
+redirect_from:
+  - /recipes/recipes/fig-cake/
+order: 40
+layout: recipe
+title: "Fig Cake"
+date: 2025-01-01
+image: /assets/images/fig-cake.jpg
+ingredients:
+  - To be added later
+---
+
+
+To be added later.

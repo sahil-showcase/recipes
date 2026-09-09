@@ -1,267 +1,1036 @@
-
-
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head><meta charset="utf-8">
-
-<!-- begin _includes/seo.html --><title>Sahil Culinary School Portfolio - Sahil Culinary School Portfolio</title>
-<meta name="description" content="I am him">
-
-
-
-<meta property="og:type" content="website">
-<meta property="og:locale" content="en_US">
-<meta property="og:site_name" content="Sahil Culinary School Portfolio">
-<meta property="og:title" content="Sahil Culinary School Portfolio">
-<meta property="og:url" content="http://localhost:4000/">
-
-
-  <meta property="og:description" content="I am him">
-
-
-
-
-
-
-
-
-
-
-
-
-<link rel="canonical" href="http://localhost:4000/">
-
-
-
-
-
-  <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Person",
-    "name": null,
-    "url": "http://localhost:4000/"
-}
-</script>
-
-
-
-
-
-
-
-
-
-<!-- end _includes/seo.html -->
-
-
-
-  <link href="/feed.xml" type="application/atom+xml" rel="alternate" title="Sahil Culinary School Portfolio Feed">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<script type="text/javascript">
-  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
-  
-</script>
-
-<!-- For all browsers -->
-<link rel="stylesheet" href="/assets/css/main.css">
-<link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@latest/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@latest/css/all.min.css"></noscript>
-
-
-<!-- Insert your custom stylesheet AFTER the theme's styles -->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The recipe collection · Sahil’s Kitchen</title>
+  <meta name="description" content="Recipes, kitchen notes, and cooking references from Sahil’s kitchen.">
   <link rel="stylesheet" href="/assets/css/main.css">
+  <script src="/assets/js/recipe-videos.js" defer></script>
 </head>
-<body class="layout--minimal"><!-- Minimal layout typically just yields the page content. -->
-  <!-- Wrap everything in a container to use the theme's styling -->
-<div class="index-page-container">
-
-  <!-- Top-left Title (no standard site header/nav) -->
-  <div class="index-page-title">
-    <h1>Sahil Culinary School Portfolio</h1>
-  </div>
-
-  <!-- Page content (your recipe grid) goes here -->
-  <div class="index-page-content">
-    <div class="intro-section">
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header wrap">
+    <a class="wordmark" href="/">Sahil’s Kitchen<span class="brand-dot">.</span></a>
+    <a class="header-link" href="/#recipes">The recipe collection <span aria-hidden="true">↗</span></a>
+  </header>
+  <main id="main" class="wrap"><section class="intro-section">
   <div class="intro-text">
-    <h2>Hey I am Sahil!</h2>
-    <p>
-      I work in the AI/Data Science fields with interests in the fin-tech space. In most of my spare time outside of this, I am in the kitchen, thinking about the kitchen or learning about the kitchen. Reach out to me at spatel16300@gmail.com!
-    </p>
+    <p class="eyebrow">A personal collection</p>
+    <h1>Made in my kitchen.</h1>
+    <p>I’m Sahil. I work in AI and data science, but most of my spare time is spent cooking, thinking about cooking, or learning something new in the kitchen. These are the dishes and notes I’ve collected along the way.</p>
   </div>
-  
-  <div class="intro-photo">
-    <img src="/assets/images/him.jpg" alt="Photo of me in the kitchen" />
-  </div>
-</div>
-
-<!-- The recipe grid or tiles -->
-<div class="recipe-grid">
-  
-    <div class="recipe-card">
-      <a href="/recipes/baklava/">
-        <div class="card-image">
-          
-          <img src="/assets/images/baklava.jpg" alt="Baklava" />
-          
-        </div>
-        <div class="card-body">
-          <h2>Baklava</h2>
-        </div>
-      </a>
-    </div>
-  
-    <div class="recipe-card">
-      <a href="/recipes/beef-wellington/">
-        <div class="card-image">
-          
-          <img src="/assets/images/beef-wellington.jpg" alt="Beef Wellington" />
-          
-        </div>
-        <div class="card-body">
-          <h2>Beef Wellington</h2>
-        </div>
-      </a>
-    </div>
-  
-    <div class="recipe-card">
-      <a href="/recipes/blackforest-cake/">
-        <div class="card-image">
-          
-          <img src="/assets/images/blackforest-cake.jpg" alt="Black Forest Cake" />
-          
-        </div>
-        <div class="card-body">
-          <h2>Black Forest Cake</h2>
-        </div>
-      </a>
-    </div>
-  
-    <div class="recipe-card">
-      <a href="/recipes/chocolate-paris-brest/">
-        <div class="card-image">
-          
-          <img src="/assets/images/chocolate-paris-brest.jpg" alt="Chocolate Paris-Brest" />
-          
-        </div>
-        <div class="card-body">
-          <h2>Chocolate Paris-Brest</h2>
-        </div>
-      </a>
-    </div>
-  
-    <div class="recipe-card">
+  <img class="intro-photo" src="/assets/images/him.jpg" alt="Sahil in the kitchen" width="180" height="180" />
+</section>
+<section id="recipes" aria-labelledby="collection-title">
+  <div class="section-heading"><h2 id="collection-title">The recipe collection</h2><span>100 dishes &amp; counting</span></div>
+  <div class="recipe-grid">
+    
+    
+    <article class="recipe-card">
       <a href="/recipes/confit-duck-lorange/">
         <div class="card-image">
-          
-          <img src="/assets/images/confit-duck-lorange.jpg" alt="Confit Duck a L'orange" />
-          
+          <img src="/assets/images/confit-duck-lorange.jpg" alt="Confit Duck a L&#39;orange" loading="lazy" width="600" height="450" />
+          <span class="card-arrow" aria-hidden="true">↗</span>
         </div>
-        <div class="card-body">
-          <h2>Confit Duck a L'orange</h2>
-        </div>
+        <div class="card-body"><h3>Confit Duck a L&#39;orange</h3><span class="card-label">View recipe <span aria-hidden="true">→</span></span></div>
       </a>
-    </div>
-  
-    <div class="recipe-card">
-      <a href="/recipes/crown-of-lamb/">
-        <div class="card-image">
-          
-          <img src="/assets/images/crown-of-lamb.jpg" alt="Crown of Lamb" />
-          
-        </div>
-        <div class="card-body">
-          <h2>Crown of Lamb</h2>
-        </div>
-      </a>
-    </div>
-  
-    <div class="recipe-card">
+    </article>
+    
+    <article class="recipe-card">
       <a href="/recipes/duck-breast-jus/">
         <div class="card-image">
-          
-          <img src="/assets/images/duck-breast-jus.jpg" alt="Duck Breast with Demi-Glace" />
-          
+          <img src="/assets/images/duck-breast-jus.jpg" alt="Duck Breast with Demi-Glace" loading="lazy" width="600" height="450" />
+          <span class="card-arrow" aria-hidden="true">↗</span>
         </div>
-        <div class="card-body">
-          <h2>Duck Breast with Demi-Glace</h2>
-        </div>
+        <div class="card-body"><h3>Duck Breast with Demi-Glace</h3><span class="card-label">View recipe <span aria-hidden="true">→</span></span></div>
       </a>
-    </div>
-  
-    <div class="recipe-card">
-      <a href="/recipes/glazed-roast-duck/">
+    </article>
+    
+    <article class="recipe-card">
+      <a href="/recipes/filet-mignon-with-bone-marrow/">
         <div class="card-image">
-          
-          <img src="/assets/images/glazed-roast-duck.jpg" alt="Glazed Roast Duck" />
-          
+          <img src="/assets/images/filet-mignon-with-bone-marrow.jpg" alt="Filet Mignon with Bone Marrow Bordelaise" loading="lazy" width="600" height="450" />
+          <span class="card-arrow" aria-hidden="true">↗</span>
         </div>
-        <div class="card-body">
-          <h2>Glazed Roast Duck</h2>
-        </div>
+        <div class="card-body"><h3>Filet Mignon with Bone Marrow Bordelaise</h3><span class="card-label">View recipe <span aria-hidden="true">→</span></span></div>
       </a>
-    </div>
-  
-    <div class="recipe-card">
-      <a href="/recipes/herb-crusted-lamb/">
+    </article>
+    
+    <article class="recipe-card">
+      <a href="/recipes/snapper-with-potatoes-and-jus/">
         <div class="card-image">
-          
-          <img src="/assets/images/herb-crusted-lamb.jpg" alt="Herb Cursted Lamb Chops" />
-          
+          <img src="/assets/images/snapper-with-potatoes-and-jus.jpg" alt="Snapper with Potatoes and Jus" loading="lazy" width="600" height="450" />
+          <span class="card-arrow" aria-hidden="true">↗</span>
         </div>
-        <div class="card-body">
-          <h2>Herb Cursted Lamb Chops</h2>
-        </div>
+        <div class="card-body"><h3>Snapper with Potatoes and Jus</h3><span class="card-label">View recipe <span aria-hidden="true">→</span></span></div>
       </a>
-    </div>
-  
-    <div class="recipe-card">
+    </article>
+    
+    <article class="recipe-card">
+      <a href="/recipes/confit-pork-belly/">
+        <div class="card-image">
+          <img src="/assets/images/confit-pork-belly.jpg" alt="Confit Pork Belly" loading="lazy" width="600" height="450" />
+          <span class="card-arrow" aria-hidden="true">↗</span>
+        </div>
+        <div class="card-body"><h3>Confit Pork Belly</h3><span class="card-label">View recipe <span aria-hidden="true">→</span></span></div>
+      </a>
+    </article>
+    
+    <article class="recipe-card">
+      <a href="/recipes/crown-of-lamb/">
+        <div class="card-image">
+          <img src="/assets/images/crown-of-lamb.jpg" alt="Crown of Lamb" loading="lazy" width="600" height="450" />
+          <span class="card-arrow" aria-hidden="true">↗</span>
+        </div>
+        <div class="card-body"><h3>Crown of Lamb</h3><span class="card-label">View recipe <span aria-hidden="true">→</span></span></div>
+      </a>
+    </article>
+    
+    <article class="recipe-card">
+      <a href="/recipes/chicken-wellington/">
+        <div class="card-image">
+          <img src="/assets/images/chicken-wellington.jpg" alt="Chicken Leg Wellington" loading="lazy" width="600" height="450" />
+          <span class="card-arrow" aria-hidden="true">↗</span>
+        </div>
+        <div class="card-body"><h3>Chicken Leg Wellington</h3><span class="card-label">View recipe <span aria-hidden="true">→</span></span></div>
+      </a>
+    </article>
+    
+    <article class="recipe-card">
+      <a href="/recipes/chocolate-paris-brest/">
+        <div class="card-image">
+          <img src="/assets/images/chocolate-paris-brest.jpg" alt="Chocolate Paris-Brest" loading="lazy" width="600" height="450" />
+          <span class="card-arrow" aria-hidden="true">↗</span>
+        </div>
+        <div class="card-body"><h3>Chocolate Paris-Brest</h3><span class="card-label">View recipe <span aria-hidden="true">→</span></span></div>
+      </a>
+    </article>
+    
+    <article class="recipe-card">
       <a href="/recipes/lobster-with-bisque/">
         <div class="card-image">
-          
-          <img src="/assets/images/lobster-with-bisque.jpg" alt="Steamed Lobster with Bisque" />
-          
+          <img src="/assets/images/lobster-with-bisque.jpg" alt="Steamed Lobster with Bisque" loading="lazy" width="600" height="450" />
+          <span class="card-arrow" aria-hidden="true">↗</span>
         </div>
-        <div class="card-body">
-          <h2>Steamed Lobster with Bisque</h2>
-        </div>
+        <div class="card-body"><h3>Steamed Lobster with Bisque</h3><span class="card-label">View recipe <span aria-hidden="true">→</span></span></div>
       </a>
-    </div>
-  
-    <div class="recipe-card">
-      <a href="/recipes/spaghetti-with-prawns/">
+    </article>
+    
+    <article class="recipe-card">
+      <a href="/recipes/baklava/">
         <div class="card-image">
-          
-          <img src="/assets/images/spaghetti-with-prawns.jpg" alt="Spaghetti with Prawns" />
-          
+          <img src="/assets/images/baklava.jpg" alt="Baklava" loading="lazy" width="600" height="450" />
+          <span class="card-arrow" aria-hidden="true">↗</span>
         </div>
-        <div class="card-body">
-          <h2>Spaghetti with Prawns</h2>
-        </div>
+        <div class="card-body"><h3>Baklava</h3><span class="card-label">View recipe <span aria-hidden="true">→</span></span></div>
       </a>
-    </div>
-  
-    <div class="recipe-card">
+    </article>
+    
+    <article class="recipe-card">
+      <a href="/recipes/porchetta/">
+        <div class="card-image">
+          <img src="/assets/images/porchetta.jpg" alt="Porchetta" loading="lazy" width="600" height="450" />
+          <span class="card-arrow" aria-hidden="true">↗</span>
+        </div>
+        <div class="card-body"><h3>Porchetta</h3><span class="card-label">View recipe <span aria-hidden="true">→</span></span></div>
+      </a>
+    </article>
+    
+    <article class="recipe-card">
+      <a href="/recipes/tortellini-en-brodo/">
+        <div class="card-image">
+          <img src="/assets/images/tortellini-en-brodo.jpg" alt="Tortellini en Brodo" loading="lazy" width="600" height="450" />
+          <span class="card-arrow" aria-hidden="true">↗</span>
+        </div>
+        <div class="card-body"><h3>Tortellini en Brodo</h3><span class="card-label">View recipe <span aria-hidden="true">→</span></span></div>
+      </a>
+    </article>
+    
+    <article class="recipe-card">
+      <a href="/recipes/basque-cheesecake/">
+        <div class="card-image">
+          <img src="/assets/images/basque-cheesecake.jpg" alt="Basque Cheesecake" loading="lazy" width="600" height="450" />
+          <span class="card-arrow" aria-hidden="true">↗</span>
+        </div>
+        <div class="card-body"><h3>Basque Cheesecake</h3><span class="card-label">View recipe <span aria-hidden="true">→</span></span></div>
+      </a>
+    </article>
+    
+    <article class="recipe-card">
+      <a href="/recipes/beef-wellington/">
+        <div class="card-image">
+          <img src="/assets/images/beef-wellington.jpg" alt="Beef Wellington" loading="lazy" width="600" height="450" />
+          <span class="card-arrow" aria-hidden="true">↗</span>
+        </div>
+        <div class="card-body"><h3>Beef Wellington</h3><span class="card-label">View recipe <span aria-hidden="true">→</span></span></div>
+      </a>
+    </article>
+    
+    <article class="recipe-card">
+      <a href="/recipes/chicken-roulade/">
+        <div class="card-image">
+          <img src="/assets/images/chicken-roulade.jpg" alt="Chicken Roulade" loading="lazy" width="600" height="450" />
+          <span class="card-arrow" aria-hidden="true">↗</span>
+        </div>
+        <div class="card-body"><h3>Chicken Roulade</h3><span class="card-label">View recipe <span aria-hidden="true">→</span></span></div>
+      </a>
+    </article>
+    
+    <article class="recipe-card">
+      <a href="/recipes/suan-cai-yu/">
+        <div class="card-image">
+          <img src="/assets/images/suan-cai-yu.jpg" alt="Suan Cai Yu" loading="lazy" width="600" height="450" />
+          <span class="card-arrow" aria-hidden="true">↗</span>
+        </div>
+        <div class="card-body"><h3>Suan Cai Yu</h3><span class="card-label">View recipe <span aria-hidden="true">→</span></span></div>
+      </a>
+    </article>
+    
+    <article class="recipe-card">
+      <a href="/recipes/herb-crusted-lamb/">
+        <div class="card-image">
+          <img src="/assets/images/herb-crusted-lamb.jpg" alt="Herb Cursted Lamb Chops" loading="lazy" width="600" height="450" />
+          <span class="card-arrow" aria-hidden="true">↗</span>
+        </div>
+        <div class="card-body"><h3>Herb Cursted Lamb Chops</h3><span class="card-label">View recipe <span aria-hidden="true">→</span></span></div>
+      </a>
+    </article>
+    
+    <article class="recipe-card">
+      <a href="/recipes/tiramisu/">
+        <div class="card-image">
+          <img src="/assets/images/tiramisu.jpg" alt="Tiramisu" loading="lazy" width="600" height="450" />
+          <span class="card-arrow" aria-hidden="true">↗</span>
+        </div>
+        <div class="card-body"><h3>Tiramisu</h3><span class="card-label">View recipe <span aria-hidden="true">→</span></span></div>
+      </a>
+    </article>
+    
+    <article class="recipe-card">
+      <a href="/recipes/baklava-cheesecake/">
+        <div class="card-image">
+          <img src="/assets/images/baklava-cheesecake.jpg" alt="Baklava Cheesecake" loading="lazy" width="600" height="450" />
+          <span class="card-arrow" aria-hidden="true">↗</span>
+        </div>
+        <div class="card-body"><h3>Baklava Cheesecake</h3><span class="card-label">View recipe <span aria-hidden="true">→</span></span></div>
+      </a>
+    </article>
+    
+    <article class="recipe-card">
+      <a href="/recipes/duck-leg-with-cauliflower-puree/">
+        <div class="card-image">
+          <img src="/assets/images/duck-leg-with-cauliflower-puree.jpg" alt="Roasted Duck Leg with Cauliflower Puree" loading="lazy" width="600" height="450" />
+          <span class="card-arrow" aria-hidden="true">↗</span>
+        </div>
+        <div class="card-body"><h3>Roasted Duck Leg with Cauliflower Puree</h3><span class="card-label">View recipe <span aria-hidden="true">→</span></span></div>
+      </a>
+    </article>
+    
+    <article class="recipe-card">
+      <a href="/recipes/pistacho-cake/">
+        <div class="card-image">
+          <img src="/assets/images/pistachio-cake.jpg" alt="Pistachio Cake" loading="lazy" width="600" height="450" />
+          <span class="card-arrow" aria-hidden="true">↗</span>
+        </div>
+        <div class="card-body"><h3>Pistachio Cake</h3><span class="card-label">View recipe <span aria-hidden="true">→</span></span></div>
+      </a>
+    </article>
+    
+    <article class="recipe-card">
+      <a href="/recipes/snow-crab-with-carrot-puree/">
+        <div class="card-image">
+          <img src="/assets/images/snow-crab-with-carrot-puree.jpg" alt="Snow Crab with Carrot Puree" loading="lazy" width="600" height="450" />
+          <span class="card-arrow" aria-hidden="true">↗</span>
+        </div>
+        <div class="card-body"><h3>Snow Crab with Carrot Puree</h3><span class="card-label">View recipe <span aria-hidden="true">→</span></span></div>
+      </a>
+    </article>
+    
+    <article class="recipe-card">
+      <a href="/recipes/turkey-roulade-with-hassleback-potatoe/">
+        <div class="card-image">
+          <img src="/assets/images/turkey-roulade-with-hassleback-potatoe.jpg" alt="Turkey Roulade with Hassleback Potatoe" loading="lazy" width="600" height="450" />
+          <span class="card-arrow" aria-hidden="true">↗</span>
+        </div>
+        <div class="card-body"><h3>Turkey Roulade with Hassleback Potatoe</h3><span class="card-label">View recipe <span aria-hidden="true">→</span></span></div>
+      </a>
+    </article>
+    
+    <article class="recipe-card">
+      <a href="/recipes/monkfish-with-vin-blanc-sauce/">
+        <div class="card-image">
+          <img src="/assets/images/monkfish-with-vin-blanc-sauce.jpg" alt="Monkfish with Vin Blanc Sauce" loading="lazy" width="600" height="450" />
+          <span class="card-arrow" aria-hidden="true">↗</span>
+        </div>
+        <div class="card-body"><h3>Monkfish with Vin Blanc Sauce</h3><span class="card-label">View recipe <span aria-hidden="true">→</span></span></div>
+      </a>
+    </article>
+    
+    <article class="recipe-card">
+      <a href="/recipes/pain-suisse-and-pain-au-chocolat/">
+        <div class="card-image">
+          <img src="/assets/images/pain-suisse-and-pain-au-chocolat.jpg" alt="Pain Suisse and Pain au Chocolat" loading="lazy" width="600" height="450" />
+          <span class="card-arrow" aria-hidden="true">↗</span>
+        </div>
+        <div class="card-body"><h3>Pain Suisse and Pain au Chocolat</h3><span class="card-label">View recipe <span aria-hidden="true">→</span></span></div>
+      </a>
+    </article>
+    
+    <article class="recipe-card">
+      <a href="/recipes/blackforest-cake/">
+        <div class="card-image">
+          <img src="/assets/images/blackforest-cake.jpg" alt="Black Forest Cake" loading="lazy" width="600" height="450" />
+          <span class="card-arrow" aria-hidden="true">↗</span>
+        </div>
+        <div class="card-body"><h3>Black Forest Cake</h3><span class="card-label">View recipe <span aria-hidden="true">→</span></span></div>
+      </a>
+    </article>
+    
+    <article class="recipe-card">
+      <a href="/recipes/fillet-mignon-beets/">
+        <div class="card-image">
+          <img src="/assets/images/fillet-mignon-beets.jpg" alt="Filet Mignon with Beets" loading="lazy" width="600" height="450" />
+          <span class="card-arrow" aria-hidden="true">↗</span>
+        </div>
+        <div class="card-body"><h3>Filet Mignon with Beets</h3><span class="card-label">View recipe <span aria-hidden="true">→</span></span></div>
+      </a>
+    </article>
+    
+    <article class="recipe-card">
+      <a href="/recipes/molten-lava-cake/">
+        <div class="card-image">
+          <img src="/assets/images/molten-lava-cake.jpg" alt="Molten Lava Cake" loading="lazy" width="600" height="450" />
+          <span class="card-arrow" aria-hidden="true">↗</span>
+        </div>
+        <div class="card-body"><h3>Molten Lava Cake</h3><span class="card-label">View recipe <span aria-hidden="true">→</span></span></div>
+      </a>
+    </article>
+    
+    <article class="recipe-card">
+      <a href="/recipes/glazed-roast-duck/">
+        <div class="card-image">
+          <img src="/assets/images/glazed-roast-duck.jpg" alt="Glazed Roast Duck" loading="lazy" width="600" height="450" />
+          <span class="card-arrow" aria-hidden="true">↗</span>
+        </div>
+        <div class="card-body"><h3>Glazed Roast Duck</h3><span class="card-label">View recipe <span aria-hidden="true">→</span></span></div>
+      </a>
+    </article>
+    
+    <article class="recipe-card">
+      <a href="/recipes/jamaican-oxtail/">
+        <div class="card-image">
+          <img src="/assets/images/jamaican-oxtail.jpg" alt="Jamaican Oxtail" loading="lazy" width="600" height="450" />
+          <span class="card-arrow" aria-hidden="true">↗</span>
+        </div>
+        <div class="card-body"><h3>Jamaican Oxtail</h3><span class="card-label">View recipe <span aria-hidden="true">→</span></span></div>
+      </a>
+    </article>
+    
+    <article class="recipe-card">
+      <a href="/recipes/ragu-bolognese/">
+        <div class="card-image">
+          <img src="/assets/images/ragu-bolognese.jpg" alt="Ragu Bolognese" loading="lazy" width="600" height="450" />
+          <span class="card-arrow" aria-hidden="true">↗</span>
+        </div>
+        <div class="card-body"><h3>Ragu Bolognese</h3><span class="card-label">View recipe <span aria-hidden="true">→</span></span></div>
+      </a>
+    </article>
+    
+    <article class="recipe-card">
+      <a href="/recipes/swedish-meatballs/">
+        <div class="card-image">
+          <img src="/assets/images/swedish-meatballs.jpg" alt="Swedish Meatballs" loading="lazy" width="600" height="450" />
+          <span class="card-arrow" aria-hidden="true">↗</span>
+        </div>
+        <div class="card-body"><h3>Swedish Meatballs</h3><span class="card-label">View recipe <span aria-hidden="true">→</span></span></div>
+      </a>
+    </article>
+    
+    <article class="recipe-card">
+      <a href="/recipes/pork-wellington/">
+        <div class="card-image">
+          <img src="/assets/images/pork-wellington.jpg" alt="Pork Wellington" loading="lazy" width="600" height="450" />
+          <span class="card-arrow" aria-hidden="true">↗</span>
+        </div>
+        <div class="card-body"><h3>Pork Wellington</h3><span class="card-label">View recipe <span aria-hidden="true">→</span></span></div>
+      </a>
+    </article>
+    
+    <article class="recipe-card">
       <a href="/recipes/tandoori-chicken/">
         <div class="card-image">
-          
-          <img src="/assets/images/tandoori-chicken.jpg" alt="Silkie Chicken Tandoori" />
-          
+          <img src="/assets/images/tandoori-chicken.jpg" alt="Silkie Chicken Tandoori" loading="lazy" width="600" height="450" />
+          <span class="card-arrow" aria-hidden="true">↗</span>
         </div>
-        <div class="card-body">
-          <h2>Silkie Chicken Tandoori</h2>
-        </div>
+        <div class="card-body"><h3>Silkie Chicken Tandoori</h3><span class="card-label">View recipe <span aria-hidden="true">→</span></span></div>
       </a>
-    </div>
-  
-</div>
-
+    </article>
+    
+    <article class="recipe-card">
+      <a href="/recipes/tonkotsu-ramen/">
+        <div class="card-image">
+          <img src="/assets/images/tonkotsu-ramen.jpg" alt="Tonkotsu Ramen" loading="lazy" width="600" height="450" />
+          <span class="card-arrow" aria-hidden="true">↗</span>
+        </div>
+        <div class="card-body"><h3>Tonkotsu Ramen</h3><span class="card-label">View recipe <span aria-hidden="true">→</span></span></div>
+      </a>
+    </article>
+    
+    <article class="recipe-card">
+      <a href="/recipes/ube-pie/">
+        <div class="card-image">
+          <img src="/assets/images/ube-pie.jpg" alt="Ube Coconut Pie" loading="lazy" width="600" height="450" />
+          <span class="card-arrow" aria-hidden="true">↗</span>
+        </div>
+        <div class="card-body"><h3>Ube Coconut Pie</h3><span class="card-label">View recipe <span aria-hidden="true">→</span></span></div>
+      </a>
+    </article>
+    
+    <article class="recipe-card">
+      <a href="/recipes/cinnamon-apple-tart/">
+        <div class="card-image">
+          <img src="/assets/images/cinnamon-apple-tart.jpg" alt="Cinnamon Apple Tart" loading="lazy" width="600" height="450" />
+          <span class="card-arrow" aria-hidden="true">↗</span>
+        </div>
+        <div class="card-body"><h3>Cinnamon Apple Tart</h3><span class="card-label">View recipe <span aria-hidden="true">→</span></span></div>
+      </a>
+    </article>
+    
+    <article class="recipe-card">
+      <a href="/recipes/tres-leches-cake/">
+        <div class="card-image">
+          <img src="/assets/images/tres-leches-cake.jpg" alt="Tres Leches Cake" loading="lazy" width="600" height="450" />
+          <span class="card-arrow" aria-hidden="true">↗</span>
+        </div>
+        <div class="card-body"><h3>Tres Leches Cake</h3><span class="card-label">View recipe <span aria-hidden="true">→</span></span></div>
+      </a>
+    </article>
+    
+    <article class="recipe-card">
+      <a href="/recipes/wild-mushroom-tortelloni/">
+        <div class="card-image">
+          <img src="/assets/images/wild-mushroom-tortelloni.jpg" alt="Wild Mushroom Tortelloni" loading="lazy" width="600" height="450" />
+          <span class="card-arrow" aria-hidden="true">↗</span>
+        </div>
+        <div class="card-body"><h3>Wild Mushroom Tortelloni</h3><span class="card-label">View recipe <span aria-hidden="true">→</span></span></div>
+      </a>
+    </article>
+    
+    <article class="recipe-card">
+      <a href="/recipes/fig-cake/">
+        <div class="card-image">
+          <img src="/assets/images/fig-cake.jpg" alt="Fig Cake" loading="lazy" width="600" height="450" />
+          <span class="card-arrow" aria-hidden="true">↗</span>
+        </div>
+        <div class="card-body"><h3>Fig Cake</h3><span class="card-label">View recipe <span aria-hidden="true">→</span></span></div>
+      </a>
+    </article>
+    
+    <article class="recipe-card">
+      <a href="/recipes/vietnamese-soft-shell-crab/">
+        <div class="card-image">
+          <img src="/assets/images/vietnamese-soft-shell-crab.jpg" alt="Vietnamese Soft Shell Crab" loading="lazy" width="600" height="450" />
+          <span class="card-arrow" aria-hidden="true">↗</span>
+        </div>
+        <div class="card-body"><h3>Vietnamese Soft Shell Crab</h3><span class="card-label">View recipe <span aria-hidden="true">→</span></span></div>
+      </a>
+    </article>
+    
+    <article class="recipe-card">
+      <a href="/recipes/honey-pie/">
+        <div class="card-image">
+          <img src="/assets/images/honey-pie.jpg" alt="Honey Pie" loading="lazy" width="600" height="450" />
+          <span class="card-arrow" aria-hidden="true">↗</span>
+        </div>
+        <div class="card-body"><h3>Honey Pie</h3><span class="card-label">View recipe <span aria-hidden="true">→</span></span></div>
+      </a>
+    </article>
+    
+    <article class="recipe-card">
+      <a href="/recipes/lemon-squares/">
+        <div class="card-image">
+          <img src="/assets/images/lemon-squares.jpg" alt="Lemon Squares" loading="lazy" width="600" height="450" />
+          <span class="card-arrow" aria-hidden="true">↗</span>
+        </div>
+        <div class="card-body"><h3>Lemon Squares</h3><span class="card-label">View recipe <span aria-hidden="true">→</span></span></div>
+      </a>
+    </article>
+    
+    <article class="recipe-card">
+      <a href="/recipes/millionaire-shortbread/">
+        <div class="card-image">
+          <img src="/assets/images/millionaire-shortbread.jpg" alt="Millionaires Shortbread" loading="lazy" width="600" height="450" />
+          <span class="card-arrow" aria-hidden="true">↗</span>
+        </div>
+        <div class="card-body"><h3>Millionaires Shortbread</h3><span class="card-label">View recipe <span aria-hidden="true">→</span></span></div>
+      </a>
+    </article>
+    
+    <article class="recipe-card">
+      <a href="/recipes/oeufs-en-meurette/">
+        <div class="card-image">
+          <img src="/assets/images/oeufs-en-meurette.jpg" alt="Oeufs en Meurette" loading="lazy" width="600" height="450" />
+          <span class="card-arrow" aria-hidden="true">↗</span>
+        </div>
+        <div class="card-body"><h3>Oeufs en Meurette</h3><span class="card-label">View recipe <span aria-hidden="true">→</span></span></div>
+      </a>
+    </article>
+    
+    <article class="recipe-card">
+      <a href="/recipes/madeleines/">
+        <div class="card-image">
+          <img src="/assets/images/madeleines.jpg" alt="Madeleines" loading="lazy" width="600" height="450" />
+          <span class="card-arrow" aria-hidden="true">↗</span>
+        </div>
+        <div class="card-body"><h3>Madeleines</h3><span class="card-label">View recipe <span aria-hidden="true">→</span></span></div>
+      </a>
+    </article>
+    
+    <article class="recipe-card">
+      <a href="/recipes/creme-brule/">
+        <div class="card-image">
+          <img src="/assets/images/creme-brule.jpg" alt="Creme Brule" loading="lazy" width="600" height="450" />
+          <span class="card-arrow" aria-hidden="true">↗</span>
+        </div>
+        <div class="card-body"><h3>Creme Brule</h3><span class="card-label">View recipe <span aria-hidden="true">→</span></span></div>
+      </a>
+    </article>
+    
+    <article class="recipe-card">
+      <a href="/recipes/chicken-chetinad/">
+        <div class="card-image">
+          <img src="/assets/images/chicken-chetinad.jpg" alt="Chicken Chetinad" loading="lazy" width="600" height="450" />
+          <span class="card-arrow" aria-hidden="true">↗</span>
+        </div>
+        <div class="card-body"><h3>Chicken Chetinad</h3><span class="card-label">View recipe <span aria-hidden="true">→</span></span></div>
+      </a>
+    </article>
+    
+    <article class="recipe-card">
+      <a href="/recipes/glazed-cornish-hen/">
+        <div class="card-image">
+          <img src="/assets/images/glazed-cornish-hen.jpg" alt="Glazed-Cronish-hen" loading="lazy" width="600" height="450" />
+          <span class="card-arrow" aria-hidden="true">↗</span>
+        </div>
+        <div class="card-body"><h3>Glazed-Cronish-hen</h3><span class="card-label">View recipe <span aria-hidden="true">→</span></span></div>
+      </a>
+    </article>
+    
+    <article class="recipe-card">
+      <a href="/recipes/fig-stuffed-quail/">
+        <div class="card-image">
+          <img src="/assets/images/fig-stuffed-quail.jpg" alt="Fig Stuffed Quail" loading="lazy" width="600" height="450" />
+          <span class="card-arrow" aria-hidden="true">↗</span>
+        </div>
+        <div class="card-body"><h3>Fig Stuffed Quail</h3><span class="card-label">View recipe <span aria-hidden="true">→</span></span></div>
+      </a>
+    </article>
+    
+    <article class="recipe-card">
+      <a href="/recipes/spaghetti-with-prawns/">
+        <div class="card-image">
+          <img src="/assets/images/spaghetti-with-prawns.jpg" alt="Spaghetti with Prawns" loading="lazy" width="600" height="450" />
+          <span class="card-arrow" aria-hidden="true">↗</span>
+        </div>
+        <div class="card-body"><h3>Spaghetti with Prawns</h3><span class="card-label">View recipe <span aria-hidden="true">→</span></span></div>
+      </a>
+    </article>
+    
+    <article class="recipe-card">
+      <a href="/recipes/seafood-fra-diavolo/">
+        <div class="card-image">
+          <img src="/assets/images/seafood-fra-diavolo.jpg" alt="Seafood Fra Diavolo" loading="lazy" width="600" height="450" />
+          <span class="card-arrow" aria-hidden="true">↗</span>
+        </div>
+        <div class="card-body"><h3>Seafood Fra Diavolo</h3><span class="card-label">View recipe <span aria-hidden="true">→</span></span></div>
+      </a>
+    </article>
+    
+    <article class="recipe-card">
+      <a href="/recipes/pumpkin-soup/">
+        <div class="card-image">
+          <img src="/assets/images/pumpkin-soup.jpg" alt="Pumpkin Soup" loading="lazy" width="600" height="450" />
+          <span class="card-arrow" aria-hidden="true">↗</span>
+        </div>
+        <div class="card-body"><h3>Pumpkin Soup</h3><span class="card-label">View recipe <span aria-hidden="true">→</span></span></div>
+      </a>
+    </article>
+    
+    <article class="recipe-card">
+      <a href="/recipes/criossant/">
+        <div class="card-image">
+          <img src="/assets/images/criossant.jpg" alt="Criossant" loading="lazy" width="600" height="450" />
+          <span class="card-arrow" aria-hidden="true">↗</span>
+        </div>
+        <div class="card-body"><h3>Criossant</h3><span class="card-label">View recipe <span aria-hidden="true">→</span></span></div>
+      </a>
+    </article>
+    
+    <article class="recipe-card">
+      <a href="/recipes/flan/">
+        <div class="card-image">
+          <img src="/assets/images/flan.jpg" alt="Flan" loading="lazy" width="600" height="450" />
+          <span class="card-arrow" aria-hidden="true">↗</span>
+        </div>
+        <div class="card-body"><h3>Flan</h3><span class="card-label">View recipe <span aria-hidden="true">→</span></span></div>
+      </a>
+    </article>
+    
+    <article class="recipe-card">
+      <a href="/recipes/niku-udon/">
+        <div class="card-image">
+          <img src="/assets/images/niku-udon.jpg" alt="Niku Udon" loading="lazy" width="600" height="450" />
+          <span class="card-arrow" aria-hidden="true">↗</span>
+        </div>
+        <div class="card-body"><h3>Niku Udon</h3><span class="card-label">View recipe <span aria-hidden="true">→</span></span></div>
+      </a>
+    </article>
+    
+    <article class="recipe-card">
+      <a href="/recipes/gyudon/">
+        <div class="card-image">
+          <img src="/assets/images/gyudon.jpg" alt="Gyudon" loading="lazy" width="600" height="450" />
+          <span class="card-arrow" aria-hidden="true">↗</span>
+        </div>
+        <div class="card-body"><h3>Gyudon</h3><span class="card-label">View recipe <span aria-hidden="true">→</span></span></div>
+      </a>
+    </article>
+    
+    <article class="recipe-card">
+      <a href="/recipes/scallops-with-cauliflower-puree/">
+        <div class="card-image">
+          <img src="/assets/images/scallops-with-cauliflower-puree.jpg" alt="Scallops with Cauliflower Puree" loading="lazy" width="600" height="450" />
+          <span class="card-arrow" aria-hidden="true">↗</span>
+        </div>
+        <div class="card-body"><h3>Scallops with Cauliflower Puree</h3><span class="card-label">View recipe <span aria-hidden="true">→</span></span></div>
+      </a>
+    </article>
+    
+    <article class="recipe-card">
+      <a href="/recipes/shepherds-pie/">
+        <div class="card-image">
+          <img src="/assets/images/shepherds-pie.jpg" alt="Shepards Pie" loading="lazy" width="600" height="450" />
+          <span class="card-arrow" aria-hidden="true">↗</span>
+        </div>
+        <div class="card-body"><h3>Shepards Pie</h3><span class="card-label">View recipe <span aria-hidden="true">→</span></span></div>
+      </a>
+    </article>
+    
+    <article class="recipe-card">
+      <a href="/recipes/miso-glazed-black-cod/">
+        <div class="card-image">
+          <img src="/assets/images/miso-glazed-black-cod.jpg" alt="Miso Glazed Black Cod with Coconut Velouté" loading="lazy" width="600" height="450" />
+          <span class="card-arrow" aria-hidden="true">↗</span>
+        </div>
+        <div class="card-body"><h3>Miso Glazed Black Cod with Coconut Velouté</h3><span class="card-label">View recipe <span aria-hidden="true">→</span></span></div>
+      </a>
+    </article>
+    
+    <article class="recipe-card">
+      <a href="/recipes/pork-cutlet/">
+        <div class="card-image">
+          <img src="/assets/images/pork-cutlet.jpg" alt="Pork Cutlet" loading="lazy" width="600" height="450" />
+          <span class="card-arrow" aria-hidden="true">↗</span>
+        </div>
+        <div class="card-body"><h3>Pork Cutlet</h3><span class="card-label">View recipe <span aria-hidden="true">→</span></span></div>
+      </a>
+    </article>
+    
+    <article class="recipe-card">
+      <a href="/recipes/thai-peanut-noodles/">
+        <div class="card-image">
+          <img src="/assets/images/thai-peanut-noodles.jpg" alt="Thai Peanut Noodles" loading="lazy" width="600" height="450" />
+          <span class="card-arrow" aria-hidden="true">↗</span>
+        </div>
+        <div class="card-body"><h3>Thai Peanut Noodles</h3><span class="card-label">View recipe <span aria-hidden="true">→</span></span></div>
+      </a>
+    </article>
+    
+    <article class="recipe-card">
+      <a href="/recipes/clam-chowder/">
+        <div class="card-image">
+          <img src="/assets/images/clam-chowder.jpg" alt="Clam Chowder" loading="lazy" width="600" height="450" />
+          <span class="card-arrow" aria-hidden="true">↗</span>
+        </div>
+        <div class="card-body"><h3>Clam Chowder</h3><span class="card-label">View recipe <span aria-hidden="true">→</span></span></div>
+      </a>
+    </article>
+    
+    <article class="recipe-card">
+      <a href="/recipes/lab-with-cilbir/">
+        <div class="card-image">
+          <img src="/assets/images/lab-with-cilbir.jpg" alt="Lamb with Cilbi" loading="lazy" width="600" height="450" />
+          <span class="card-arrow" aria-hidden="true">↗</span>
+        </div>
+        <div class="card-body"><h3>Lamb with Cilbi</h3><span class="card-label">View recipe <span aria-hidden="true">→</span></span></div>
+      </a>
+    </article>
+    
+    <article class="recipe-card">
+      <a href="/recipes/sicilian-pistachio-spaghetti/">
+        <div class="card-image">
+          <img src="/assets/images/sicilian-pistachio-spaghetti.jpg" alt="Sicilian Pistachio Spaghetti" loading="lazy" width="600" height="450" />
+          <span class="card-arrow" aria-hidden="true">↗</span>
+        </div>
+        <div class="card-body"><h3>Sicilian Pistachio Spaghetti</h3><span class="card-label">View recipe <span aria-hidden="true">→</span></span></div>
+      </a>
+    </article>
+    
+    <article class="recipe-card">
+      <a href="/recipes/ravioli-with-sage-brown-butter/">
+        <div class="card-image">
+          <img src="/assets/images/ravioli-with-sage-brown-butter.jpg" alt="Ravioli with Sage Brown Butter Sauce" loading="lazy" width="600" height="450" />
+          <span class="card-arrow" aria-hidden="true">↗</span>
+        </div>
+        <div class="card-body"><h3>Ravioli with Sage Brown Butter Sauce</h3><span class="card-label">View recipe <span aria-hidden="true">→</span></span></div>
+      </a>
+    </article>
+    
+    <article class="recipe-card">
+      <a href="/recipes/chocolate-mouse-petit-gateau/">
+        <div class="card-image">
+          <img src="/assets/images/chocolate-mouse-petit-gateau.jpg" alt="Chocolate Mousse Petit Gateau" loading="lazy" width="600" height="450" />
+          <span class="card-arrow" aria-hidden="true">↗</span>
+        </div>
+        <div class="card-body"><h3>Chocolate Mousse Petit Gateau</h3><span class="card-label">View recipe <span aria-hidden="true">→</span></span></div>
+      </a>
+    </article>
+    
+    <article class="recipe-card">
+      <a href="/recipes/tempura-with-tencha/">
+        <div class="card-image">
+          <img src="/assets/images/tempura-with-tencha.jpg" alt="Tempura with Tencha" loading="lazy" width="600" height="450" />
+          <span class="card-arrow" aria-hidden="true">↗</span>
+        </div>
+        <div class="card-body"><h3>Tempura with Tencha</h3><span class="card-label">View recipe <span aria-hidden="true">→</span></span></div>
+      </a>
+    </article>
+    
+    <article class="recipe-card">
+      <a href="/recipes/fluke-head-with-sriracha-sauce/">
+        <div class="card-image">
+          <img src="/assets/images/fluke-head-with-sriracha-sauce.jpg" alt="Fluke Head with Sriracha Sauce" loading="lazy" width="600" height="450" />
+          <span class="card-arrow" aria-hidden="true">↗</span>
+        </div>
+        <div class="card-body"><h3>Fluke Head with Sriracha Sauce</h3><span class="card-label">View recipe <span aria-hidden="true">→</span></span></div>
+      </a>
+    </article>
+    
+    <article class="recipe-card">
+      <a href="/recipes/fish-mosaic/">
+        <div class="card-image">
+          <img src="/assets/images/fish-mosaic.jpg" alt="Fish Mosaic" loading="lazy" width="600" height="450" />
+          <span class="card-arrow" aria-hidden="true">↗</span>
+        </div>
+        <div class="card-body"><h3>Fish Mosaic</h3><span class="card-label">View recipe <span aria-hidden="true">→</span></span></div>
+      </a>
+    </article>
+    
+    <article class="recipe-card">
+      <a href="/recipes/fluke-with-chicken-butter-sauce/">
+        <div class="card-image">
+          <img src="/assets/images/fluke-with-chicken-butter-sauce.jpg" alt="Fluke with Chicken Butter Sauce" loading="lazy" width="600" height="450" />
+          <span class="card-arrow" aria-hidden="true">↗</span>
+        </div>
+        <div class="card-body"><h3>Fluke with Chicken Butter Sauce</h3><span class="card-label">View recipe <span aria-hidden="true">→</span></span></div>
+      </a>
+    </article>
+    
+    <article class="recipe-card">
+      <a href="/recipes/galatte-de-rois/">
+        <div class="card-image">
+          <img src="/assets/images/galatte-de-rois.jpg" alt="Galatte De Rois" loading="lazy" width="600" height="450" />
+          <span class="card-arrow" aria-hidden="true">↗</span>
+        </div>
+        <div class="card-body"><h3>Galatte De Rois</h3><span class="card-label">View recipe <span aria-hidden="true">→</span></span></div>
+      </a>
+    </article>
+    
+    <article class="recipe-card">
+      <a href="/recipes/macarons/">
+        <div class="card-image">
+          <img src="/assets/images/macarons.jpg" alt="Macarons" loading="lazy" width="600" height="450" />
+          <span class="card-arrow" aria-hidden="true">↗</span>
+        </div>
+        <div class="card-body"><h3>Macarons</h3><span class="card-label">View recipe <span aria-hidden="true">→</span></span></div>
+      </a>
+    </article>
+    
+    <article class="recipe-card">
+      <a href="/recipes/abalone-en-croute/">
+        <div class="card-image">
+          <img src="/assets/images/abalone-en-croute.jpg" alt="Abalone En Croute" loading="lazy" width="600" height="450" />
+          <span class="card-arrow" aria-hidden="true">↗</span>
+        </div>
+        <div class="card-body"><h3>Abalone En Croute</h3><span class="card-label">View recipe <span aria-hidden="true">→</span></span></div>
+      </a>
+    </article>
+    
+    <article class="recipe-card">
+      <a href="/recipes/pheasant-celeriac-puree/">
+        <div class="card-image">
+          <img src="/assets/images/pheasant-celeriac-puree.jpg" alt="Pheasant with Celeriac Puree" loading="lazy" width="600" height="450" />
+          <span class="card-arrow" aria-hidden="true">↗</span>
+        </div>
+        <div class="card-body"><h3>Pheasant with Celeriac Puree</h3><span class="card-label">View recipe <span aria-hidden="true">→</span></span></div>
+      </a>
+    </article>
+    
+    <article class="recipe-card">
+      <a href="/recipes/punjabi-atta-chicken/">
+        <div class="card-image">
+          <img src="/assets/images/punjabi-atta-chicken.jpg" alt="Punjabi Atta Chicken" loading="lazy" width="600" height="450" />
+          <span class="card-arrow" aria-hidden="true">↗</span>
+        </div>
+        <div class="card-body"><h3>Punjabi Atta Chicken</h3><span class="card-label">View recipe <span aria-hidden="true">→</span></span></div>
+      </a>
+    </article>
+    
+    <article class="recipe-card">
+      <a href="/recipes/keylime-pie/">
+        <div class="card-image">
+          <img src="/assets/images/keylime-pie.jpg" alt="Key Lime Pie" loading="lazy" width="600" height="450" />
+          <span class="card-arrow" aria-hidden="true">↗</span>
+        </div>
+        <div class="card-body"><h3>Key Lime Pie</h3><span class="card-label">View recipe <span aria-hidden="true">→</span></span></div>
+      </a>
+    </article>
+    
+    <article class="recipe-card">
+      <a href="/recipes/rhubarb-tart/">
+        <div class="card-image">
+          <img src="/assets/images/rhubarb-tart.jpg" alt="Rhubarb Tart" loading="lazy" width="600" height="450" />
+          <span class="card-arrow" aria-hidden="true">↗</span>
+        </div>
+        <div class="card-body"><h3>Rhubarb Tart</h3><span class="card-label">View recipe <span aria-hidden="true">→</span></span></div>
+      </a>
+    </article>
+    
+    <article class="recipe-card">
+      <a href="/recipes/salmon-with-curry-foam/">
+        <div class="card-image">
+          <img src="/assets/images/salmon-with-curry-foam.jpg" alt="Salmon with Curry Foam" loading="lazy" width="600" height="450" />
+          <span class="card-arrow" aria-hidden="true">↗</span>
+        </div>
+        <div class="card-body"><h3>Salmon with Curry Foam</h3><span class="card-label">View recipe <span aria-hidden="true">→</span></span></div>
+      </a>
+    </article>
+    
+    <article class="recipe-card">
+      <a href="/recipes/chicken-ballotine/">
+        <div class="card-image">
+          <img src="/assets/images/chicken-ballotine.jpg" alt="Chicken Ballotine" loading="lazy" width="600" height="450" />
+          <span class="card-arrow" aria-hidden="true">↗</span>
+        </div>
+        <div class="card-body"><h3>Chicken Ballotine</h3><span class="card-label">View recipe <span aria-hidden="true">→</span></span></div>
+      </a>
+    </article>
+    
+    <article class="recipe-card">
+      <a href="/recipes/fraisier-cake/">
+        <div class="card-image">
+          <img src="/assets/images/fraisier-cake.jpg" alt="Fraisier Cake" loading="lazy" width="600" height="450" />
+          <span class="card-arrow" aria-hidden="true">↗</span>
+        </div>
+        <div class="card-body"><h3>Fraisier Cake</h3><span class="card-label">View recipe <span aria-hidden="true">→</span></span></div>
+      </a>
+    </article>
+    
+    <article class="recipe-card">
+      <a href="/recipes/steak-and-ale-pie/">
+        <div class="card-image">
+          <img src="/assets/images/steak-and-ale-pie.jpg" alt="Steak and Ale Pie" loading="lazy" width="600" height="450" />
+          <span class="card-arrow" aria-hidden="true">↗</span>
+        </div>
+        <div class="card-body"><h3>Steak and Ale Pie</h3><span class="card-label">View recipe <span aria-hidden="true">→</span></span></div>
+      </a>
+    </article>
+    
+    <article class="recipe-card">
+      <a href="/recipes/bananabread-banoffee/">
+        <div class="card-image">
+          <img src="/assets/images/bananabread-banoffee.jpg" alt="Bananabread Banoffee" loading="lazy" width="600" height="450" />
+          <span class="card-arrow" aria-hidden="true">↗</span>
+        </div>
+        <div class="card-body"><h3>Bananabread Banoffee</h3><span class="card-label">View recipe <span aria-hidden="true">→</span></span></div>
+      </a>
+    </article>
+    
+    <article class="recipe-card">
+      <a href="/recipes/churros/">
+        <div class="card-image">
+          <img src="/assets/images/churros.jpg" alt="Churros" loading="lazy" width="600" height="450" />
+          <span class="card-arrow" aria-hidden="true">↗</span>
+        </div>
+        <div class="card-body"><h3>Churros</h3><span class="card-label">View recipe <span aria-hidden="true">→</span></span></div>
+      </a>
+    </article>
+    
+    <article class="recipe-card">
+      <a href="/recipes/mole-poblano/">
+        <div class="card-image">
+          <img src="/assets/images/mole-poblano.jpg" alt="Mole Poblano" loading="lazy" width="600" height="450" />
+          <span class="card-arrow" aria-hidden="true">↗</span>
+        </div>
+        <div class="card-body"><h3>Mole Poblano</h3><span class="card-label">View recipe <span aria-hidden="true">→</span></span></div>
+      </a>
+    </article>
+    
+    <article class="recipe-card">
+      <a href="/recipes/rum-cake/">
+        <div class="card-image">
+          <img src="/assets/images/rum-cake.jpg" alt="Rum Cake" loading="lazy" width="600" height="450" />
+          <span class="card-arrow" aria-hidden="true">↗</span>
+        </div>
+        <div class="card-body"><h3>Rum Cake</h3><span class="card-label">View recipe <span aria-hidden="true">→</span></span></div>
+      </a>
+    </article>
+    
+    <article class="recipe-card">
+      <a href="/recipes/escovitch-fish/">
+        <div class="card-image">
+          <img src="/assets/images/escovitch-fish.jpg" alt="Escovitch Fish" loading="lazy" width="600" height="450" />
+          <span class="card-arrow" aria-hidden="true">↗</span>
+        </div>
+        <div class="card-body"><h3>Escovitch Fish</h3><span class="card-label">View recipe <span aria-hidden="true">→</span></span></div>
+      </a>
+    </article>
+    
+    <article class="recipe-card">
+      <a href="/recipes/caprese-mozzarella/">
+        <div class="card-image">
+          <img src="/assets/images/caprese-mozzarella.jpg" alt="Caprese with Homemade Mozzarella" loading="lazy" width="600" height="450" />
+          <span class="card-arrow" aria-hidden="true">↗</span>
+        </div>
+        <div class="card-body"><h3>Caprese with Homemade Mozzarella</h3><span class="card-label">View recipe <span aria-hidden="true">→</span></span></div>
+      </a>
+    </article>
+    
+    <article class="recipe-card">
+      <a href="/recipes/passionfruit-panna-cotta/">
+        <div class="card-image">
+          <img src="/assets/images/passionfruit-panna-cotta.jpg" alt="Passionfruit Panna Cotta" loading="lazy" width="600" height="450" />
+          <span class="card-arrow" aria-hidden="true">↗</span>
+        </div>
+        <div class="card-body"><h3>Passionfruit Panna Cotta</h3><span class="card-label">View recipe <span aria-hidden="true">→</span></span></div>
+      </a>
+    </article>
+    
+    <article class="recipe-card">
+      <a href="/recipes/raviolo-al-uovo/">
+        <div class="card-image">
+          <img src="/assets/images/raviolo-al-uovo.jpg" alt="Raviolo Al&#39; Uovo" loading="lazy" width="600" height="450" />
+          <span class="card-arrow" aria-hidden="true">↗</span>
+        </div>
+        <div class="card-body"><h3>Raviolo Al&#39; Uovo</h3><span class="card-label">View recipe <span aria-hidden="true">→</span></span></div>
+      </a>
+    </article>
+    
+    <article class="recipe-card">
+      <a href="/recipes/cappelletti-alla-nerano/">
+        <div class="card-image">
+          <img src="/assets/images/cappelletti-alla-nerano.jpg" alt="Cappelletti Alla Nerano" loading="lazy" width="600" height="450" />
+          <span class="card-arrow" aria-hidden="true">↗</span>
+        </div>
+        <div class="card-body"><h3>Cappelletti Alla Nerano</h3><span class="card-label">View recipe <span aria-hidden="true">→</span></span></div>
+      </a>
+    </article>
+    
+    <article class="recipe-card">
+      <a href="/recipes/agnolotti-del-plin/">
+        <div class="card-image">
+          <img src="/assets/images/agnolotti-del-plin.jpg" alt="Agnolotti del Plin" loading="lazy" width="600" height="450" />
+          <span class="card-arrow" aria-hidden="true">↗</span>
+        </div>
+        <div class="card-body"><h3>Agnolotti del Plin</h3><span class="card-label">View recipe <span aria-hidden="true">→</span></span></div>
+      </a>
+    </article>
+    
+    <article class="recipe-card">
+      <a href="/recipes/focaccia/">
+        <div class="card-image">
+          <img src="/assets/images/focaccia.jpg" alt="Focaccia" loading="lazy" width="600" height="450" />
+          <span class="card-arrow" aria-hidden="true">↗</span>
+        </div>
+        <div class="card-body"><h3>Focaccia</h3><span class="card-label">View recipe <span aria-hidden="true">→</span></span></div>
+      </a>
+    </article>
+    
+    <article class="recipe-card">
+      <a href="/recipes/olive-oil-cake/">
+        <div class="card-image">
+          <img src="/assets/images/olive-oil-cake.jpg" alt="Olive Oil Cake" loading="lazy" width="600" height="450" />
+          <span class="card-arrow" aria-hidden="true">↗</span>
+        </div>
+        <div class="card-body"><h3>Olive Oil Cake</h3><span class="card-label">View recipe <span aria-hidden="true">→</span></span></div>
+      </a>
+    </article>
+    
+    <article class="recipe-card">
+      <a href="/recipes/scallop-crudo-with-cantaloupe-proscuitto/">
+        <div class="card-image">
+          <img src="/assets/images/scallop-crudo-with-cantaloupe-proscuitto.jpg" alt="Scallop Crudo w Cantaloupe Proscuitto" loading="lazy" width="600" height="450" />
+          <span class="card-arrow" aria-hidden="true">↗</span>
+        </div>
+        <div class="card-body"><h3>Scallop Crudo w Cantaloupe Proscuitto</h3><span class="card-label">View recipe <span aria-hidden="true">→</span></span></div>
+      </a>
+    </article>
+    
+    <article class="recipe-card">
+      <a href="/recipes/pork-trotter-kauffmann/">
+        <div class="card-image">
+          <img src="/assets/images/pork-trotter-kauffmann.jpg" alt="Pork Trotter Kauffmann" loading="lazy" width="600" height="450" />
+          <span class="card-arrow" aria-hidden="true">↗</span>
+        </div>
+        <div class="card-body"><h3>Pork Trotter Kauffmann</h3><span class="card-label">View recipe <span aria-hidden="true">→</span></span></div>
+      </a>
+    </article>
+    
+    <article class="recipe-card">
+      <a href="/recipes/aguachile-verde/">
+        <div class="card-image">
+          <img src="/assets/images/aguachile-verde.jpg" alt="Aguachile Verde" loading="lazy" width="600" height="450" />
+          <span class="card-arrow" aria-hidden="true">↗</span>
+        </div>
+        <div class="card-body"><h3>Aguachile Verde</h3><span class="card-label">View recipe <span aria-hidden="true">→</span></span></div>
+      </a>
+    </article>
+    
+    <article class="recipe-card">
+      <a href="/recipes/korean-ricecake-soup-with-pork-dumplings/">
+        <div class="card-image">
+          <img src="/assets/images/korean-ricecake-soup-with-pork-dumplings.jpg" alt="Korean Ricecake Soup with Pork Dumplings" loading="lazy" width="600" height="450" />
+          <span class="card-arrow" aria-hidden="true">↗</span>
+        </div>
+        <div class="card-body"><h3>Korean Ricecake Soup with Pork Dumplings</h3><span class="card-label">View recipe <span aria-hidden="true">→</span></span></div>
+      </a>
+    </article>
+    
+    <article class="recipe-card">
+      <a href="/recipes/choux-au-craquelin/">
+        <div class="card-image">
+          <img src="/assets/images/choux-au-craquelin.jpg" alt="Choux au Craquelin" loading="lazy" width="600" height="450" />
+          <span class="card-arrow" aria-hidden="true">↗</span>
+        </div>
+        <div class="card-body"><h3>Choux au Craquelin</h3><span class="card-label">View recipe <span aria-hidden="true">→</span></span></div>
+      </a>
+    </article>
+    
+    <article class="recipe-card">
+      <a href="/recipes/profiterole/">
+        <div class="card-image">
+          <img src="/assets/images/profiterole.jpg" alt="Profiterole" loading="lazy" width="600" height="450" />
+          <span class="card-arrow" aria-hidden="true">↗</span>
+        </div>
+        <div class="card-body"><h3>Profiterole</h3><span class="card-label">View recipe <span aria-hidden="true">→</span></span></div>
+      </a>
+    </article>
+    
   </div>
+</section>
 
-</div>
-
-  <!-- If you want a footer, you could include it here, or omit. -->
+</main>
+  <footer class="site-footer wrap"><span>From Sahil’s kitchen.</span><a href="mailto:spatel16300@gmail.com">Say hello <span aria-hidden="true">↗</span></a></footer>
 </body>
 </html>

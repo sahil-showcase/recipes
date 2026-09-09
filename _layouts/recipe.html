@@ -1,38 +1,53 @@
 ---
 layout: minimal
-author_profile: false
 ---
-
-<div class="recipe-page">
-  
-  <!-- Hero Image -->
-  {% if page.image %}
-  <figure class="hero-image">
-    <img src="{{ page.image | relative_url }}" alt="{{ page.title }}">
-  </figure>
-  {% endif %}
-
-  <div class="recipe-title">
-    <h1> {{ page.title }} </h1>
-  </div>
-
-  <div class="recipe-content">
-    <!-- Ingredients on the left -->
-    {% if page.ingredients %}
-    <section class="ingredients">
-      <h2>Ingredients</h2>
-      <ul>
-        {% for item in page.ingredients %}
-        <li>{{ item }}</li>
-        {% endfor %}
-      </ul>
-    </section>
+<article class="recipe-page">
+  <nav class="back-nav" aria-label="Recipe navigation">
+    <a class="back-link" href="{{ '/' | relative_url }}#recipes"><span aria-hidden="true">←</span> All recipes</a>
+  </nav>
+  <header class="recipe-header">
+    <p class="eyebrow">From my kitchen</p>
+    <h1>{{ page.title | escape }}</h1>
+    {% if page.description %}<p class="recipe-description">{{ page.description | escape }}</p>{% endif %}
+    <a class="jump-link" href="#recipe-content">Jump to recipe <span aria-hidden="true">↓</span></a>
+    {% if page.image %}
+    <figure class="hero-image">
+      <img src="{{ page.image | relative_url }}" alt="{{ page.title | escape }}" fetchpriority="high">
+    </figure>
     {% endif %}
-
-    <!-- Steps (markdown content) on the right -->
-    <section class="steps">
-      <h2>Steps</h2>
-      {{ content }}
+  </header>
+  <div id="recipe-content" class="recipe-content{% unless page.ingredients %} no-ingredients{% endunless %}">
+    {% if page.ingredients %}
+    <aside class="ingredients" aria-labelledby="ingredients-title">
+      <p class="eyebrow">What you’ll need</p>
+      <h2 id="ingredients-title">Ingredients</h2>
+      {% include recipe-ingredients.html %}
+    </aside>
+    {% endif %}
+    <section class="steps" aria-labelledby="method-title">
+      <p class="eyebrow">Let’s cook</p>
+      <h2 id="method-title">Method & notes</h2>
+      <div class="recipe-notes">
+        {% include recipe-method.html %}
+        {{ content }}
+        {% if page.links.size > 0 %}
+        <section class="recipe-links" aria-labelledby="links-title">
+          <h3 id="links-title">Links & references</h3>
+          <ul>
+            {% for reference in page.links %}
+            {% assign protocol = reference.url | slice: 0, 8 %}
+            {% assign http_protocol = reference.url | slice: 0, 7 %}
+            {% if protocol == 'https://' or http_protocol == 'http://' %}
+            <li><a href="{{ reference.url | escape }}">{{ reference.label | default: reference.url | escape }} <span aria-hidden="true">↗</span></a></li>
+            {% endif %}
+            {% endfor %}
+          </ul>
+        </section>
+        {% endif %}
+      </div>
+      {% include recipe-references.html %}
+      <div id="recipe-videos"></div>
     </section>
   </div>
-</div>
+  <a class="back-link bottom-back" href="{{ '/' | relative_url }}#recipes"><span aria-hidden="true">←</span> Back to all recipes</a>
+</article>

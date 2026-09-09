@@ -1,0 +1,17 @@
+---
+redirect_from:
+  - /recipes/recipes/tortellini-en-brodo/
+order: 12
+layout: recipe
+title: "Tortellini en Brodo"
+date: 2025-01-01
+image: /assets/images/tortellini-en-brodo.jpg
+ingredients:
+  - To be added later
+---
+
+References: 
+https://www.youtube.com/watch?v=oQtzr1cCsUQ
+https://www.youtube.com/watch?v=7bKR7VrTsj4
+
+To be added later.

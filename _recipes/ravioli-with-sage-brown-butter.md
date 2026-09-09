@@ -1,0 +1,17 @@
+---
+redirect_from:
+  - /recipes/recipes/ravioli-with-sage-brown-butter/
+order: 66
+layout: recipe
+title: "Ravioli with Sage Brown Butter Sauce"
+date: 2025-01-01
+image: /assets/images/ravioli-with-sage-brown-butter.jpg
+ingredients:
+  - To be added later
+---
+
+References:
+https://www.youtube.com/watch?v=7bKR7VrTsj4
+
+
+To be added later.

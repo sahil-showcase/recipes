@@ -1,216 +1,118 @@
 ---
 ---
+:root { --ink: #202420; --muted: #656a64; --paper: #ffffff; --line: #e2e5df; --accent: #a44425; --soft: #f4f5f1; }
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; scroll-padding-top: 24px; }
+body { margin: 0; background: var(--paper); color: var(--ink); font: 17px/1.75 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; -webkit-font-smoothing: antialiased; }
+a { color: inherit; text-underline-offset: .25em; }
+a:focus-visible { outline: 3px solid var(--accent); outline-offset: 5px; border-radius: 3px; }
+img { max-width: 100%; display: block; }
+.wrap { width: calc(100% - 96px); max-width: 1240px; margin-inline: auto; }
+.site-header { min-height: 94px; display: flex; align-items: center; justify-content: space-between; gap: 24px; border-bottom: 1px solid var(--line); }
+.wordmark { font-size: 1.5rem; font-weight: 750; letter-spacing: -.06em; text-decoration: none; }
+.brand-dot { color: var(--accent); }
+.header-link { font-size: .9rem; text-decoration: none; }
+.header-link span { margin-left: 18px; color: var(--accent); }
+h1,h2,h3,p { margin-top: 0; }
+h1 { font-family: Georgia, "Times New Roman", serif; font-size: clamp(2.5rem, 5vw, 4.4rem); font-weight: 400; line-height: 1.1; letter-spacing: -.055em; margin-bottom: 24px; overflow-wrap: anywhere; }
+.eyebrow { font-size: .8rem; font-weight: 650; text-transform: uppercase; letter-spacing: .16em; color: var(--accent); margin-bottom: 16px; }
+.intro-section { display: grid; grid-template-columns: minmax(0,1fr) 176px; align-items: center; gap: 72px; padding: 48px 0; }
+.intro-text { max-width: 790px; }
+.intro-text > p:last-child { max-width: 700px; color: var(--muted); margin-bottom: 0; }
+.intro-photo { width: 176px; height: 176px; object-fit: cover; border-radius: 24px 24px 72px 24px; }
+.section-heading { display: flex; align-items: baseline; justify-content: space-between; gap: 20px; padding: 26px 0; border-top: 1px solid var(--line); }
+.section-heading h2 { font-size: 1.25rem; font-weight: 600; margin: 0; letter-spacing: -.03em; }
+.section-heading > span { font-size: .875rem; color: var(--muted); }
+.recipe-grid { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 40px 26px; }
+.recipe-card { min-width: 0; }
+.recipe-card a { text-decoration: none; display: block; height: 100%; }
+.card-image { aspect-ratio: 4/3; position: relative; overflow: hidden; border-radius: 14px; background: var(--soft); }
+.card-image img { width: 100%; height: 100%; object-fit: cover; transition: transform .25s; }
+.recipe-card a:hover img { transform: scale(1.035); }
+.recipe-card a:hover h3 { color: var(--accent); }
+.card-arrow { position: absolute; right: 14px; bottom: 14px; border-radius: 50%; background: var(--paper); width: 40px; height: 40px; display: grid; place-items: center; }
+.card-body { padding: 17px 2px 0; }
+.card-body h3 { font-family: Georgia, serif; font-weight: 400; font-size: 1.5rem; line-height: 1.3; margin: 0 0 8px; letter-spacing: -.025em; overflow-wrap: anywhere; }
+.card-label { font-size: .875rem; color: var(--muted); }
+.card-label span { margin-left: 6px; }
+.image-placeholder { height: 100%; display: grid; place-items: center; color: var(--muted); }
+.site-footer { border-top: 1px solid var(--line); margin-top: 72px; padding: 28px 0; display: flex; justify-content: space-between; gap: 20px; font-size: .875rem; color: var(--muted); }
+.skip-link { position: absolute; top: -100px; left: 20px; padding: 12px; background: white; z-index: 10; }
+.skip-link:focus { top: 10px; }
+.recipe-page { max-width: 1080px; margin-inline: auto; }
+.back-nav { padding: 22px 0; }
+.back-link { display: inline-flex; align-items: center; gap: 12px; min-height: 44px; color: var(--accent); font-size: .95rem; font-weight: 600; text-decoration: none; }
+.back-link:hover,.header-link:hover { text-decoration: underline; }
+.recipe-header { text-align: center; padding: 12px 0 48px; }
+.recipe-header h1 { max-width: 900px; margin: 0 auto 20px; }
+.recipe-description { max-width: 680px; margin: 0 auto 16px; color: var(--muted); font-size: 1.125rem; }
+.jump-link { display: inline-flex; align-items: center; gap: 24px; min-height: 44px; padding: 8px 20px; margin-bottom: 28px; border: 1px solid var(--line); border-radius: 30px; color: var(--accent); text-decoration: none; font-size: .875rem; }
+.jump-link:hover { background: var(--soft); }
+.hero-image { margin: 0 auto; width: 100%; max-width: 960px; border-radius: 18px; overflow: hidden; background: var(--soft); }
+.hero-image img { width: 100%; height: auto; max-height: 640px; object-fit: contain; margin-inline: auto; }
+.recipe-content { border-top: 1px solid var(--line); padding-top: 44px; display: grid; grid-template-columns: minmax(230px, .85fr) minmax(0,1.8fr); gap: 56px; }
+.recipe-content.no-ingredients { grid-template-columns: minmax(0,760px); justify-content: center; }
+.recipe-content h2 { font: 400 2.1rem/1.2 Georgia,serif; letter-spacing: -.04em; margin-bottom: 28px; }
+.ingredients { align-self: start; padding: 28px; border: 1px solid var(--line); border-radius: 14px; background: var(--soft); }
+.ingredients .ingredient-list { margin: 0; padding-left: 1.6rem; }
+.ingredients .ingredient-list li { padding-left: .35rem; }
+.ingredients li::marker { color: var(--accent); font-weight: 650; }
+.ingredients li { padding: 13px 0; border-bottom: 1px solid var(--line); overflow-wrap: anywhere; font-size: 1rem; }
+.ingredients li:last-child { border-bottom: 0; }
+.steps { min-width: 0; }
+.recipe-notes { overflow-wrap: anywhere; font-size: 1.0625rem; line-height: 1.85; }
+.recipe-notes ol,.recipe-notes ul { padding-left: 26px; }
+.recipe-notes li { padding-left: 10px; margin-bottom: 20px; }
+.recipe-notes ol > li::marker { font-weight: 700; color: var(--accent); }
+.recipe-notes h2,.recipe-notes h3 { margin-top: 36px; }
+.recipe-notes a { color: var(--accent); }
+.recipe-notes blockquote { border-left: 3px solid var(--accent); margin: 24px 0; padding-left: 20px; color: var(--muted); }
+.recipe-links { border-top: 1px solid var(--line); margin-top: 32px; }
+.recipe-links ul { padding-left: 18px; }
+.recipe-links li { margin-bottom: 8px; }
+.video-reference { margin: 24px 0; }
+.video-reference iframe { border: 0; width: 100%; aspect-ratio: 16/9; display: block; border-radius: 12px; background: #1b201b; }
+.video-reference figcaption { margin-top: 8px; font-size: .875rem; color: var(--muted); }
+.bottom-back { margin-top: 40px; }
+@media (max-width: 900px) { .wrap { width: calc(100% - 56px); } .intro-section { gap: 36px; } .recipe-grid { gap: 32px 20px; } .recipe-content { gap: 28px; } .card-body h3 { font-size: 1.3rem; } }
+@media (max-width: 700px) { .wrap { width: calc(100% - 36px); } .site-header { min-height: 80px; } .header-link { max-width: 125px; text-align: right; } .header-link span { margin-left: 3px; } .intro-section { grid-template-columns: minmax(0,1fr) 96px; padding: 32px 0; gap: 20px; } .intro-photo { width: 96px; height: 120px; border-radius: 16px 16px 36px 16px; } .intro-text h1 { font-size: 2.5rem; } .recipe-grid { grid-template-columns: repeat(2,minmax(0,1fr)); gap: 28px 16px; } .recipe-content { grid-template-columns: minmax(0,1fr); padding-top: 28px; } .recipe-header { padding-bottom: 32px; } .section-heading { flex-wrap: wrap; gap: 4px; } .recipe-description { font-size: 1rem; } }
+@media (max-width: 420px) { .intro-section { gap: 16px; grid-template-columns: minmax(0,1fr) 72px; align-items: start; } .intro-photo { width: 72px; height: 96px; } .intro-text h1 { font-size: 2.15rem; } .recipe-grid { grid-template-columns: minmax(0,1fr); } .card-body h3 { font-size: 1.5rem; } .site-footer { flex-wrap: wrap; } }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } .card-image img { transition: none; } }
+@media print { .site-header,.site-footer,.back-nav,.bottom-back,.jump-link,#recipe-videos { display: none; } .wrap { width: 100%; } .hero-image { max-width: 360px; } .recipe-content { display: block; } .ingredients { background: none; padding: 0; border: 0; } }
 
-.index-page-container {
-    max-width: 1200px;
-    margin: 0 auto; 
-    padding: 1rem;
-  }
-  
-.index-page-title {
-margin-bottom: 1rem;
-    /* Place the title in the top-left corner.
-        If you want it truly top-left with no padding, remove the margin. */
-    h1 {
-        font-size: 2rem;
-        margin: 0;
-    }
+/* Structured recipes: numbers follow the authored list order. */
+.recipe-notes .method-steps { padding-left: 2rem; margin: 28px 0; }
+.recipe-notes .method-step { padding-left: 14px; margin-bottom: 32px; padding-bottom: 24px; border-bottom: 1px solid var(--line); }
+.recipe-notes .method-step > h3 { margin: 0 0 12px; font-size: 1.2rem; line-height: 1.45; }
+.method-descriptor { color: var(--muted); }
+.step-descriptor { margin: 12px 0; color: var(--muted); font-size: 1rem; }
+.method-descriptor > :last-child, .step-descriptor > :last-child, .step-text > :last-child { margin-bottom: 0; }
+.step-citations { margin-top: 16px; }
+.citation-link { display: block; width: fit-content; padding: 5px 0; font-size: .9rem; }
+.step-reference-image { margin: 12px 0 0; max-width: 340px; }
+.step-reference-image img { width: 100%; border-radius: 10px; }
+.step-reference-image figcaption, .reference-caption, .reference-item figcaption { margin: 8px 0; font-size: .9rem; color: var(--muted); }
+.citation-note { font-size: .9rem; color: var(--muted); border-left: 2px solid var(--line); padding-left: 14px; margin: 8px 0 16px; }
+.citation-note > :last-child { margin-bottom: 0; }
+.recipe-references { border-top: 1px solid var(--line); margin-top: 32px; padding-top: 24px; }
+.recipe-references > h3 { font: 400 1.7rem/1.3 Georgia,serif; margin: 0 0 20px; }
+.reference-list { padding-left: 1.8rem; }
+.reference-item { padding: 16px; margin-bottom: 20px; background: var(--soft); border-radius: 12px; overflow-wrap: anywhere; }
+.reference-item::marker { font-weight: 700; color: var(--accent); }
+.reference-kind { margin: 0 0 4px; text-transform: uppercase; letter-spacing: .1em; font-size: .75rem; color: var(--muted); }
+.reference-item h4 { margin: 0 0 14px; font-size: 1.1rem; }
+.reference-item figure { margin: 0; }
+.reference-item img { width: 100%; max-height: 420px; object-fit: contain; border-radius: 8px; }
+.reference-source { color: var(--accent); font-size: .95rem; display: inline-block; padding: 8px 0; }
+.reference-backlinks { display: flex; flex-wrap: wrap; gap: 8px 20px; font-size: .875rem; margin-top: 12px; }
+.reference-video iframe, .reference-video video, .video-reference video { width: 100%; aspect-ratio: 16/9; border: 0; border-radius: 10px; display: block; background: #1b201b; }
+.method-step:target, .reference-item:target { outline: 2px solid var(--accent); outline-offset: 5px; }
+@media print { .reference-video, .reference-backlinks { display: none; } }
 
-}
-
-.index-page-content {
-/* This is where your .recipe-grid and .recipe-card styling goes,
-    or you can keep that styling separate. */
-    .intro-section {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        max-width: 80%;
-        margin: 2rem auto;
-      
-        .intro-text {
-          flex: 1;
-          margin-right: 1rem;
-        }
-      
-        .intro-photo {
-          flex: 0 0 auto;
-          width: 200px;
-          height: 200px;
-      
-          img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            border-radius: 50%;
-            display: block;
-          }
-        }
-      
-        @media (max-width: 768px) {
-          flex-direction: column;
-          /* Option 1: Align everything to the left
-             align-items: flex-start; */
-      
-          /* Option 2: Center items horizontally.
-             This is more typical for a stacked mobile layout. */
-          align-items: center; 
-      
-          .intro-text {
-            margin-right: 0;
-            margin-bottom: 1rem;
-            text-align: center; /* optional if you want the text centered */
-          }
-      
-          .intro-photo {
-            width: 150px; 
-            height: 150px;
-            margin: 0 auto; /* ensures the image is centered horizontally */
-          }
-        }
-      }
-    .recipe-grid {
-        /* 5 columns of equal width on wide screens */
-        display: grid;
-        grid-template-columns: repeat(5, 1fr);
-        gap: 1rem;               /* space between tiles */
-        max-width: 1200px;       /* or whatever max width you prefer */
-        margin: 0 auto;          /* center the grid */
-        padding: 1rem;
-        
-        /* Responsive fallback: fewer columns on smaller screens */
-        @media (max-width: 1200px) {
-          grid-template-columns: repeat(4, 1fr);
-        }
-        @media (max-width: 992px) {
-          grid-template-columns: repeat(3, 1fr);
-        }
-        @media (max-width: 768px) {
-          grid-template-columns: repeat(2, 1fr);
-        }
-        @media (max-width: 480px) {
-          grid-template-columns: 1fr; /* single column on narrow phones */
-        }
-      }
-      
-      .recipe-card {
-        background-color: #3a3a3a; /* Darker grey */
-        color: #fff;               /* White text for contrast */
-        border-radius: 8px;        /* Rounded corners */
-        overflow: hidden;          /* Ensures children (img) remain clipped */
-        text-align: center;        /* Center text */
-        display: flex;            /* We'll use flex column so the image area can be top portion */
-        flex-direction: column;
-        height: 380px;             /* Fixed total tile height (adjust as needed) */
-      
-        /* Slight hover effect */
-        transition: transform 0.2s ease, box-shadow 0.2s ease;
-        &:hover {
-          transform: translateY(-3px);
-          box-shadow: 0 3px 8px rgba(0, 0, 0, 0.3);
-        }
-      
-        a {
-          display: flex;
-          flex-direction: column;
-          color: inherit;
-          text-decoration: none;
-          height: 100%;  /* ensures the link covers the whole card */
-        }
-        
-        /* The top 40% is for the image */
-        .card-image {
-          flex: 0 0 50%;
-          aspect-ratio: 1 / 1;
-          position: relative;
-          overflow: hidden;
-          img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;  /* Crop/cover the area */
-            display: block;
-          }
-        }
-      
-        /* The bottom 60% is for the title (or more info) */
-        .card-body {
-          flex: 1;               /* fill remaining 60% height */
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          padding: 0.5rem;
-          background-color: #3a3a3a;
-      
-          h2 {
-            font-size: 1rem;     /* “small but fairly sized” text */
-            margin: 0;
-            padding: 0;
-          }
-        }
-      }
-      
-}
-
-.recipe-page {
-    max-width: 1200px;
-    margin: 0 auto;  // center the recipe content
-    
-    // Hero image at top
-    .hero-image {
-      width: 100%;
-      margin: 0;          // remove default figure margins if you like
-      img {
-        width: 100%;
-        height: 90vh;     // top half of viewport (or pick a fixed pixel height)
-        object-fit: cover;
-        display: block;
-      }
-    }
-  
-    .recipe-title {
-      margin: 1.5rem 0 1rem;
-      text-align: center;
-      font-size: 2rem;
-    }
-  
-    .recipe-content {
-      display: flex;
-      flex-direction: row;
-      gap: 2rem;                  // space between columns
-      margin-bottom: 3rem;        // bottom spacing
-  
-      .ingredients {
-        flex: 0 0 25%;            // fixed 25% width
-        background: #fafafa;
-        padding: 1rem;
-        border-radius: 4px;
-  
-        h2 {
-          margin-top: 0;
-        }
-        ul {
-          margin-top: 0.5rem;
-          padding-left: 1rem;
-        }
-      }
-  
-      .steps {
-        flex: 1;                  // take the remaining width
-        padding: 1rem;
-        background: #fff;
-        border-radius: 4px;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
-  
-        h2 {
-          margin-top: 0;
-        }
-        p {
-          line-height: 1.6;
-        }
-        ol, ul {
-          margin: 1rem 0;
-          padding-left: 1.5rem;
-        }
-      }
-    }
-  }
+/* Group headings do not consume numbers; each list resumes at its source position. */
+.ingredients .ingredient-group-title { font-size: 1rem; margin: 24px 0 8px; color: var(--accent); }
+.ingredients .ingredient-list + .ingredient-list { margin-top: 20px; }
+.recipe-notes .step-group-title { margin: 32px 0 16px; font: 400 1.5rem/1.3 Georgia, serif; color: var(--accent); }
+.inline-citation { line-height: 0; font-size: .8em; white-space: nowrap; }
+.inline-citation a { padding: 3px; text-decoration: none; font-weight: 650; }
+.inline-citation a:hover { text-decoration: underline; }

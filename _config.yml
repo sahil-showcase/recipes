@@ -1,5 +1,5 @@
 title: "Sahil Culinary School Portfolio"
-description: "I am him"
+description: "Recipes, kitchen notes, and cooking references from Sahil’s kitchen."
 lang: en
 remote_theme: "mmistakes/minimal-mistakes@4.26.2"
 skip_to_main_content_link: false
@@ -12,3 +12,17 @@ plugins:
   - jekyll-remote-theme
   - jekyll-seo-tag
   - jekyll-include-cache
+  - jekyll-redirect-from
+
+defaults:
+  - scope:
+      path: ""
+      type: recipes
+    values:
+      layout: recipe
+      order: 999999
+
+exclude:
+  - README.md
+  - _templates
+  - scripts

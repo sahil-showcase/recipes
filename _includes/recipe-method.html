@@ -1,0 +1,40 @@
+{% if page.method_intro %}<div class="method-descriptor">{% include cited-text.html text=page.method_intro %}</div>{% endif %}
+{% if page.steps.size > 0 %}
+{% assign previous_step_group = '' %}
+  {% for step in page.steps %}
+  {% assign step_group = step.group | default: '' | strip %}
+  {% if forloop.first or step_group != previous_step_group %}
+    {% unless forloop.first %}</ol>{% endunless %}
+    {% if step_group != '' %}<h3 class="step-group-title">{{ step_group | escape }}</h3>{% endif %}
+    <ol class="method-steps" start="{{ forloop.index }}">
+  {% endif %}
+  <li id="step-{{ forloop.index }}" class="method-step">
+    {% if step.title %}<h3>{{ step.title | escape }}</h3>{% endif %}
+    {% if step.before %}<div class="step-descriptor">{% include cited-text.html text=step.before %}</div>{% endif %}
+    <div class="step-text">{% include cited-text.html text=step.text %}</div>
+    {% if step.after %}<div class="step-descriptor">{% include cited-text.html text=step.after %}</div>{% endif %}
+    {% if step.citations.size > 0 %}
+    <div class="step-citations" aria-label="Step references">
+      {% for citation_id in step.citations %}
+        {% for reference in page.references %}
+          {% if reference.id == citation_id %}
+          <a class="citation-link" href="#reference-{{ reference.id | escape }}">[{{ forloop.index }}] {{ reference.label | escape }}</a>
+          {% if reference.type == 'image' %}
+          <figure class="step-reference-image">
+            <a href="#reference-{{ reference.id | escape }}" aria-label="View reference: {{ reference.label | escape }}"><img src="{{ reference.url | relative_url }}" alt="{{ reference.alt | default: reference.label | escape }}" loading="lazy"></a>
+            {% if reference.caption %}<figcaption>{{ reference.caption | escape }}</figcaption>{% endif %}
+          </figure>
+          {% elsif reference.type == 'note' %}
+          <div class="citation-note">{{ reference.text | markdownify }}</div>
+          {% endif %}
+          {% endif %}
+        {% endfor %}
+      {% endfor %}
+    </div>
+    {% endif %}
+  </li>
+  {% assign previous_step_group = step_group %}
+  {% if forloop.last %}</ol>{% endif %}
+  {% endfor %}
+{% endif %}
+{% if page.method_outro %}<div class="method-descriptor method-outro">{% include cited-text.html text=page.method_outro %}</div>{% endif %}

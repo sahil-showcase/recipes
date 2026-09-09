@@ -1,0 +1,38 @@
+{% if page.references.size > 0 %}
+<section class="recipe-references" aria-labelledby="references-title">
+  <h3 id="references-title">Citations & references</h3>
+  <ol class="reference-list">
+    {% for reference in page.references %}
+    <li id="reference-{{ reference.id | escape }}" class="reference-item" tabindex="-1">
+      <p class="reference-kind">{{ reference.type | capitalize }}</p>
+      <h4>{{ reference.label | escape }}</h4>
+      {% case reference.type %}
+      {% when 'image' %}
+      <figure>
+        <a href="{{ reference.url | relative_url }}"><img src="{{ reference.url | relative_url }}" alt="{{ reference.alt | default: reference.label | escape }}" loading="lazy"></a>
+        {% if reference.caption %}<figcaption>{{ reference.caption | escape }}</figcaption>{% endif %}
+      </figure>
+      <a class="reference-source" href="{{ reference.url | relative_url }}">Open image <span aria-hidden="true">↗</span></a>
+      {% when 'video' %}
+      <div class="reference-video" data-video-url="{{ reference.url | relative_url | escape }}" data-video-title="{{ reference.label | escape }}"></div>
+      {% if reference.caption %}<p class="reference-caption">{{ reference.caption | escape }}</p>{% endif %}
+      <a class="reference-source" href="{{ reference.url | relative_url }}">Open video <span aria-hidden="true">↗</span></a>
+      {% when 'website' %}
+      {% if reference.caption %}<p class="reference-caption">{{ reference.caption | escape }}</p>{% endif %}
+      <a class="reference-source" href="{{ reference.url | escape }}">{{ reference.label | escape }} <span aria-hidden="true">↗</span></a>
+      {% when 'note' %}
+      <div class="reference-note">{{ reference.text | markdownify }}</div>
+      {% endcase %}
+      <div class="reference-backlinks">
+        {% for step in page.steps %}
+          {% capture step_inline_text %}{{ step.before }} {{ step.text }} {{ step.after }}{% endcapture %}
+          {% capture step_inline_token %}[cite:{{ reference.id }}]{% endcapture %}
+          {% capture step_markdown_target %}](#reference-{{ reference.id }}){% endcapture %}
+          {% if step.citations contains reference.id or step_inline_text contains step_inline_token or step_inline_text contains step_markdown_target %}<a href="#step-{{ forloop.index }}">Back to step {{ forloop.index }} ↑</a>{% endif %}
+        {% endfor %}
+      </div>
+    </li>
+    {% endfor %}
+  </ol>
+</section>
+{% endif %}

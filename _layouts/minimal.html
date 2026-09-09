@@ -1,27 +1,20 @@
----
-# This front matter says "use the theme's minimal layout under the hood"
-layout: none
----
-{% comment %}
-This layout file overrides minimal-mistakes/minimal.html 
-but we can copy its content and tweak as needed.
-{% endcomment %}
-
-<!DOCTYPE html>
-<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+<!doctype html>
+<html lang="{{ page.lang | default: site.lang | default: 'en' }}">
 <head>
-  {%- include head.html -%}
-  <!-- Insert your custom stylesheet AFTER the theme's styles -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ page.title | escape }} · Sahil’s Kitchen</title>
+  <meta name="description" content="{{ page.description | default: site.description | escape }}">
   <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+  <script src="{{ '/assets/js/recipe-videos.js' | relative_url }}" defer></script>
 </head>
-<body class="layout--minimal">
-  {%- if site.skip_to_main_content_link != false and page.skip_to_main_content_link != false -%}
-    {%- include skip-to-content.html -%}
-  {%- endif -%}
-
-  <!-- Minimal layout typically just yields the page content. -->
-  {{ content }}
-
-  <!-- If you want a footer, you could include it here, or omit. -->
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header wrap">
+    <a class="wordmark" href="{{ '/' | relative_url }}">Sahil’s Kitchen<span class="brand-dot">.</span></a>
+    <a class="header-link" href="{{ '/' | relative_url }}#recipes">The recipe collection <span aria-hidden="true">↗</span></a>
+  </header>
+  <main id="main" class="wrap">{{ content }}</main>
+  <footer class="site-footer wrap"><span>From Sahil’s kitchen.</span><a href="mailto:spatel16300@gmail.com">Say hello <span aria-hidden="true">↗</span></a></footer>
 </body>
 </html>
