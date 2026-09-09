@@ -1,0 +1,12 @@
+{% assign previous_ingredient_group = '' %}
+{% for item in page.ingredients %}
+  {% assign ingredient_group = item.group | default: '' | strip %}
+  {% if forloop.first or ingredient_group != previous_ingredient_group %}
+    {% unless forloop.first %}</ol>{% endunless %}
+    {% if ingredient_group != '' %}<h3 class="ingredient-group-title">{{ ingredient_group | escape }}</h3>{% endif %}
+    <ol class="ingredient-list" start="{{ forloop.index }}">
+  {% endif %}
+  <li>{{ item.text | default: item | escape }}</li>
+  {% assign previous_ingredient_group = ingredient_group %}
+  {% if forloop.last %}</ol>{% endif %}
+{% endfor %}

@@ -1,0 +1,7 @@
+{%- assign cited_text = include.text | default: '' -%}
+{%- for cited_reference in page.references -%}
+  {%- capture citation_token -%}[cite:{{ cited_reference.id }}]{%- endcapture -%}
+  {%- capture citation_markup -%}<sup class="inline-citation"><a href="#reference-{{ cited_reference.id | escape }}" aria-label="Reference {{ forloop.index }}: {{ cited_reference.label | escape }}">[{{ forloop.index }}]</a></sup>{%- endcapture -%}
+  {%- assign cited_text = cited_text | replace: citation_token, citation_markup -%}
+{%- endfor -%}
+{{- cited_text | markdownify -}}
