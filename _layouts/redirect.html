@@ -1,0 +1,13 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>{{ page.preview_recipe.title | default: site.title | escape }}</title>
+  {% include social-preview.html %}
+  <meta http-equiv="refresh" content="0; url={{ page.redirect.to | escape }}">
+  <meta name="robots" content="noindex">
+</head>
+<body>
+  <p><a href="{{ page.redirect.to | escape }}">Continue to {{ page.preview_recipe.title | default: 'the recipe collection' | escape }}</a></p>
+</body>
+</html>

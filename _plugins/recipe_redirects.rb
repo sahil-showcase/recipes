@@ -1,3 +1,5 @@
+require "uri"
+
 # Generate aliases before jekyll-redirect-from creates its static redirect pages.
 # Historical filenames live in _data/legacy_recipe_slugs.yml, not recipe files.
 module RecipeRoutes
@@ -30,7 +32,8 @@ module RecipeRoutes
         aliases = names.flat_map do |name|
           paths = ["/recipes/#{name}/", "/recipes/recipes/#{name}/"]
           # On a project site mounted at /recipes, also support the public
-          # /recipes/name/ path. Alias paths here are relative to the mount.
+          # /recipes/name/ path (the canonical path for current names).
+          # Alias paths here are relative to the mount.
           if !baseurl.empty?
             paths += paths.filter_map { |path| path.delete_prefix(baseurl) if path.start_with?(baseurl + '/') }
           end
@@ -69,6 +72,28 @@ module RecipeRoutes
 
     def fail_build(message)
       raise Jekyll::Errors::FatalException, message
+    end
+  end
+end
+
+# Redirect crawlers may not follow HTML refreshes. Give the alias page the
+# destination recipe's preview metadata after jekyll-redirect-from runs.
+module RecipeRoutes
+  class PreviewGenerator < Jekyll::Generator
+    priority :lowest
+
+    def generate(site)
+      recipes = site.collections.fetch('recipes').docs.to_h { |recipe| [recipe.url, recipe] }
+      baseurl = site.baseurl.to_s.sub(%r{/$}, '')
+      site.pages.each do |page|
+        target = page.data.dig('redirect', 'to')
+        next unless target
+        path = URI.parse(target).path
+        path = path.delete_prefix(baseurl) unless baseurl.empty?
+        recipe = recipes[path]
+        next unless recipe
+        page.data['preview_recipe'] = recipe.data.slice('title', 'description', 'image')
+      end
     end
   end
 end

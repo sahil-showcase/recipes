@@ -22,7 +22,7 @@ Use `101` for the next new recipe, `102` for the one after that, and so on. To m
 
 Use numbers without quotes. Titles are only used to break a tie if two recipes accidentally share an order value. Recipes without an order fall back to the end, so always fill in this field.
 
-Recipe and photo filenames have **no numeric prefixes**. For example, `_recipes/baklava-cheesecake.md` references `/assets/images/baklava-cheesecake.jpg`, and its page is `/recipes/baklava-cheesecake/` (after any configured site base path). The filename determines the URL; `order` only controls tile placement. Changing the order never changes the recipe URL.
+Recipe and photo filenames have **no numeric prefixes**. For example, `_recipes/baklava-cheesecake.md` references `/assets/images/baklava-cheesecake.jpg`, and its public page is `/recipes/baklava-cheesecake/` with the default `/recipes` base path. The filename determines the URL; `order` only controls tile placement. Changing the order never changes the recipe URL.
 
 ## What to fill in
 
@@ -56,6 +56,12 @@ Open the local address printed by Jekyll. To check a production build, run `bund
 
 For a project site hosted under `/recipes`, configure `baseurl: "/recipes"` in `_config.yml` (or pass `--baseurl /recipes`). For a domain-root site, leave it empty. Local navigation, images, scripts, and stylesheets use Jekyll’s `relative_url` filter.
 
+## Recipe URLs and message previews
+
+The public recipe URL is `/recipes/name/`: `_config.yml` sets the project `baseurl` to `/recipes` and collection permalink to `/:title/`. Homepage tiles link directly to this canonical URL. The old `/recipes/recipes/name/` paths and numbered names redirect to it. GitHub Actions overrides the base path automatically for the Pages host.
+
+Each recipe's existing `image:` field supplies its main photo and social preview. No extra fields are needed. Normal pages and legacy redirect pages both include Open Graph and Twitter metadata with an absolute image URL. Messaging apps decide when to refresh previews; previously sent messages may keep an older preview.
+
 ## Automatic recipe redirects
 
 `_plugins/recipe_redirects.rb` automatically creates alternate recipe routes during every build. No redirect fields are needed in new recipe files. It supports `/recipes/name/` and `/recipes/recipes/name/`, the historical numbered names in `_data/legacy_recipe_slugs.yml`, capitalization/underscore variants, and GitHub Pages project mounts.
@@ -68,7 +74,7 @@ The intentionally deleted Korean Fried Chicken placeholder is listed in `_data/r
 
 The workflow in `.github/workflows/pages.yml` validates content, tests redirect generation, builds Jekyll with custom plugins, verifies the generated redirect pages, and publishes `_site` as an artifact. Pushes to `main` deploy; pull requests only build and validate. Build output is not committed.
 
-One-time activation before pushing this change: in repository **Settings → Pages → Build and deployment → Source**, choose **GitHub Actions**. Then commit and push these changes to `main`. If already pushed, run **Build and deploy recipe site** from the Actions tab. The workflow reads the site's origin and base path from GitHub Pages, so it works with project URLs and custom domains. The same plugin runs locally with `bundle exec jekyll serve --baseurl ""`.
+One-time activation before pushing this change: in repository **Settings → Pages → Build and deployment → Source**, choose **GitHub Actions**. Then commit and push these changes to `main`. If already pushed, run **Build and deploy recipe site** from the Actions tab. The workflow reads the site's origin and base path from GitHub Pages, so it works with project URLs and custom domains. The same plugin runs locally with `bundle exec jekyll serve`; open `http://localhost:4000/recipes/`.
 
 Local checks:
 

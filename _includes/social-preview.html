@@ -1,0 +1,21 @@
+{% assign preview = page.preview_recipe | default: page %}
+{% assign preview_title = preview.title | default: site.title %}
+{% assign preview_description = preview.description | default: site.description %}
+{% assign preview_url = page.redirect.to | default: page.url | absolute_url %}
+<link rel="canonical" href="{{ preview_url | escape }}">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Sahil’s Kitchen">
+<meta property="og:title" content="{{ preview_title | escape }}">
+<meta property="og:description" content="{{ preview_description | escape }}">
+<meta property="og:url" content="{{ preview_url | escape }}">
+<meta name="twitter:title" content="{{ preview_title | escape }}">
+<meta name="twitter:description" content="{{ preview_description | escape }}">
+{% if preview.image %}
+<meta property="og:image" content="{{ preview.image | absolute_url | escape }}">
+<meta property="og:image:alt" content="{{ preview_title | escape }}">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="{{ preview.image | absolute_url | escape }}">
+<meta name="twitter:image:alt" content="{{ preview_title | escape }}">
+{% else %}
+<meta name="twitter:card" content="summary">
+{% endif %}

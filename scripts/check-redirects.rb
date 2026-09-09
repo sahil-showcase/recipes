@@ -23,11 +23,28 @@ redirects.each do |from, to|
   html = Nokogiri::HTML(File.read(File.join(output, from.delete_prefix('/'), 'index.html')))
   raise "Missing redirect refresh: #{from}" unless html.at_css('meta[http-equiv="refresh"]')
   raise "Wrong redirect canonical: #{from}" unless html.at_css('link[rel="canonical"]')['href'] == to
+  unless target == '/'
+    destination = Nokogiri::HTML(target_html)
+    %w[og:title og:image og:url].each do |property|
+      expected = destination.at_css("meta[property='#{property}']")&.[]('content')
+      actual = html.at_css("meta[property='#{property}']")&.[]('content')
+      raise "Missing or mismatched #{property} on #{from}" unless expected && actual == expected
+    end
+  end
 end
+home = Nokogiri::HTML(File.read(File.join(output, 'index.html')))
 Dir[File.join(root, '_recipes/*.md')].each do |file|
   name = File.basename(file, '.md')
-  target = baseurl + "/recipes/#{name}/"
-  expected = ["/recipes/recipes/#{name}/"]
+  target = baseurl + "/#{name}/"
+  raise "Homepage does not link directly to #{target}" unless home.at_css(".recipe-card a[href='#{target}']")
+  recipe_html = Nokogiri::HTML(File.read(File.join(output, name, 'index.html')))
+  canonical = recipe_html.at_css('link[rel="canonical"]')&.[]('href')
+  raise "Incorrect canonical recipe URL: #{name}" unless canonical && URI.parse(canonical).path == target
+  hero = recipe_html.at_css('.hero-image img')&.[]('src')
+  image = recipe_html.at_css('meta[property="og:image"]')&.[]('content')
+  raise "Preview image does not match hero: #{name}" unless hero && image == URI.join(canonical, hero).to_s
+  raise "Image URL is not absolute: #{name}" unless URI.parse(image).is_a?(URI::HTTP)
+  expected = ["/recipes/#{name}/", "/recipes/recipes/#{name}/"]
   expected << "/#{name}/" if baseurl == '/recipes'
   history.fetch(name, []).each do |old|
     expected.concat(["/recipes/#{old}/", "/recipes/recipes/#{old}/"])

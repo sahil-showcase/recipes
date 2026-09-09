@@ -1,12 +1,14 @@
 title: "Sahil Culinary School Portfolio"
 description: "Recipes, kitchen notes, and cooking references from Sahil’s kitchen."
 lang: en
+url: "https://sahil-showcase.github.io"
+baseurl: "/recipes"
 remote_theme: "mmistakes/minimal-mistakes@4.26.2"
 skip_to_main_content_link: false
 collections:
   recipes:
     output: true
-    permalink: /recipes/:title/
+    permalink: /:title/
 plugins:
   - jekyll-feed
   - jekyll-remote-theme
