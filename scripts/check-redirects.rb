@@ -25,7 +25,7 @@ redirects.each do |from, to|
   raise "Wrong redirect canonical: #{from}" unless html.at_css('link[rel="canonical"]')['href'] == to
   unless target == '/'
     destination = Nokogiri::HTML(target_html)
-    %w[og:title og:image og:url].each do |property|
+    %w[og:title og:image og:image:width og:image:height og:image:type og:url].each do |property|
       expected = destination.at_css("meta[property='#{property}']")&.[]('content')
       actual = html.at_css("meta[property='#{property}']")&.[]('content')
       raise "Missing or mismatched #{property} on #{from}" unless expected && actual == expected

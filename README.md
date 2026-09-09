@@ -60,7 +60,7 @@ For a project site hosted under `/recipes`, configure `baseurl: "/recipes"` in `
 
 The public recipe URL is `/recipes/name/`: `_config.yml` sets the project `baseurl` to `/recipes` and collection permalink to `/:title/`. Homepage tiles link directly to this canonical URL. The old `/recipes/recipes/name/` paths and numbered names redirect to it. GitHub Actions overrides the base path automatically for the Pages host.
 
-Each recipe's existing `image:` field supplies its main photo and social preview. No extra fields are needed. Normal pages and legacy redirect pages both include Open Graph and Twitter metadata with an absolute image URL. Messaging apps decide when to refresh previews; previously sent messages may keep an older preview.
+Each recipe's existing `image:` field supplies its main photo and social preview. Dimensions and file type are read automatically from local photos during the build. No extra fields are needed. Normal pages and legacy redirect pages both include Open Graph and Twitter metadata with an absolute image URL. Messaging apps decide when to refresh previews; previously sent messages may keep an older preview.
 
 ## Automatic recipe redirects
 

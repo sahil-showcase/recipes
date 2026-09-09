@@ -1,4 +1,5 @@
 require "uri"
+require "fastimage"
 
 # Generate aliases before jekyll-redirect-from creates its static redirect pages.
 # Historical filenames live in _data/legacy_recipe_slugs.yml, not recipe files.
@@ -85,6 +86,15 @@ module RecipeRoutes
     def generate(site)
       recipes = site.collections.fetch('recipes').docs.to_h { |recipe| [recipe.url, recipe] }
       baseurl = site.baseurl.to_s.sub(%r{/$}, '')
+      recipes.each_value do |recipe|
+        image = recipe.data['image']
+        next unless image.is_a?(String) && image.start_with?('/assets/images/')
+        path = site.in_source_dir(image.delete_prefix('/'))
+        info = FastImage.new(path)
+        next unless info.size
+        recipe.data['preview_width'], recipe.data['preview_height'] = info.size
+        recipe.data['preview_type'] = "image/#{info.type}" if %i[jpeg png gif webp avif].include?(info.type)
+      end
       site.pages.each do |page|
         target = page.data.dig('redirect', 'to')
         next unless target
@@ -92,7 +102,7 @@ module RecipeRoutes
         path = path.delete_prefix(baseurl) unless baseurl.empty?
         recipe = recipes[path]
         next unless recipe
-        page.data['preview_recipe'] = recipe.data.slice('title', 'description', 'image')
+        page.data['preview_recipe'] = recipe.data.slice('title', 'description', 'image', 'preview_width', 'preview_height', 'preview_type')
       end
     end
   end

@@ -12,6 +12,11 @@
 <meta name="twitter:description" content="{{ preview_description | escape }}">
 {% if preview.image %}
 <meta property="og:image" content="{{ preview.image | absolute_url | escape }}">
+{% if preview.preview_width and preview.preview_height %}
+<meta property="og:image:width" content="{{ preview.preview_width }}">
+<meta property="og:image:height" content="{{ preview.preview_height }}">
+{% endif %}
+{% if preview.preview_type %}<meta property="og:image:type" content="{{ preview.preview_type | escape }}">{% endif %}
 <meta property="og:image:alt" content="{{ preview_title | escape }}">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="{{ preview.image | absolute_url | escape }}">

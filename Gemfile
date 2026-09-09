@@ -4,3 +4,6 @@ source "https://rubygems.org"
 # Our Actions workflow builds the local redirect plugin.
 gem "github-pages", group: :jekyll_plugins, require: false
 gem "jekyll-include-cache", group: :jekyll_plugins
+
+# Read photo dimensions for social link previews without modifying the image.
+gem "fastimage", "~> 2.4", require: false
